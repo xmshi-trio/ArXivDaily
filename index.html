@@ -12,7 +12,7 @@
 <body>
 <section class="daily-content">
 <h2 class="daily-heading">
-<time datetime="2022-11-08T01:30:00Z">11-08</time>
+<time datetime="2022-11-09T01:30:00Z">11-09</time>
 </h2>
 <ul class="sources card">
 <li class="source">
@@ -21,25 +21,29 @@
 <section class="articles-per-source">
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">1Cademy @ Causal News Corpus 2022: Leveraging Self-Training in Causality Classification of Socio-Political Event Data. (arXiv:2211.02729v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.02729">
+<summary class="article-expander__title">CELLS: A Parallel Corpus for Biomedical Lay Language Generation. (arXiv:2211.03818v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03818">
 <div class="article-summary-box-inner">
-<span><p>This paper details our participation in the Challenges and Applications of
-Automated Extraction of Socio-political Events from Text (CASE) workshop @
-EMNLP 2022, where we take part in Subtask 1 of Shared Task 3. We approach the
-given task of event causality detection by proposing a self-training pipeline
-that follows a teacher-student classifier method. More specifically, we
-initially train a teacher model on the true, original task data, and use that
-teacher model to self-label data to be used in the training of a separate
-student model for the final task prediction. We test how restricting the number
-of positive or negative self-labeled examples in the self-training process
-affects classification performance. Our final results show that using
-self-training produces a comprehensive performance improvement across all
-models and self-labeled training sets tested within the task of event causality
-sequence classification. On top of that, we find that self-training performance
-did not diminish even when restricting either positive/negative examples used
-in training. Our code is be publicly available at
-https://github.com/Gzhang-umich/1CademyTeamOfCASE.
+<span><p>Recent lay language generation systems have used Transformer models trained
+on a parallel corpus to increase health information accessibility. However, the
+applicability of these models is constrained by the limited size and topical
+breadth of available corpora. We introduce CELLS, the largest (63k pairs) and
+broadest-ranging (12 journals) parallel corpus for lay language generation. The
+abstract and the corresponding lay language summary are written by domain
+experts, assuring the quality of our dataset. Furthermore, qualitative
+evaluation of expert-authored plain language summaries has revealed background
+explanation as a key strategy to increase accessibility. Such explanation is
+challenging for neural models to generate because it goes beyond simplification
+by adding content absent from the source. We derive two specialized paired
+corpora from CELLS to address key challenges in lay language generation:
+generating background explanations and simplifying the original abstract. We
+adopt retrieval-augmented models as an intuitive fit for the task of background
+explanation generation, and show improvements in summary quality and simplicity
+while maintaining factual correctness. Taken together, this work presents the
+first comprehensive study of background explanation for lay language
+generation, paving the path for disseminating scientific knowledge to a broader
+audience. CELLS is publicly available at:
+https://github.com/LinguisticAnomalies/pls_retrieval.
 </p></span>
 </div>
 </a>
@@ -47,23 +51,23 @@ https://github.com/Gzhang-umich/1CademyTeamOfCASE.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Intriguing Properties of Compression on Multilingual Models. (arXiv:2211.02738v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.02738">
+<summary class="article-expander__title">AX-MABSA: A Framework for Extremely Weakly Supervised Multi-label Aspect Based Sentiment Analysis. (arXiv:2211.03837v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03837">
 <div class="article-summary-box-inner">
-<span><p>Multilingual models are often particularly dependent on scaling to generalize
-to a growing number of languages. Compression techniques are widely relied upon
-to reconcile the growth in model size with real world resource constraints, but
-compression can have a disparate effect on model performance for low-resource
-languages. It is thus crucial to understand the trade-offs between scale,
-multilingualism, and compression. In this work, we propose an experimental
-framework to characterize the impact of sparsifying multilingual pre-trained
-language models during fine-tuning. Applying this framework to mBERT named
-entity recognition models across 40 languages, we find that compression confers
-several intriguing and previously unknown generalization properties. In
-contrast to prior findings, we find that compression may improve model
-robustness over dense models. We additionally observe that under certain
-sparsification regimes compression may aid, rather than disproportionately
-impact the performance of low-resource languages.
+<span><p>Aspect Based Sentiment Analysis is a dominant research area with potential
+applications in social media analytics, business, finance, and health. Prior
+works in this area are primarily based on supervised methods, with a few
+techniques using weak supervision limited to predicting a single aspect
+category per review sentence. In this paper, we present an extremely weakly
+supervised multi-label Aspect Category Sentiment Analysis framework which does
+not use any labelled data. We only rely on a single word per class as an
+initial indicative information. We further propose an automatic word selection
+technique to choose these seed categories and sentiment words. We explore
+unsupervised language model post-training to improve the overall performance,
+and propose a multi-label generator model to generate multiple aspect
+category-sentiment pairs per review sentence. Experiments conducted on four
+benchmark datasets showcase our method to outperform other weakly supervised
+baselines by a significant margin.
 </p></span>
 </div>
 </a>
@@ -71,25 +75,23 @@ impact the performance of low-resource languages.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">KGLM: Integrating Knowledge Graph Structure in Language Models for Link Prediction. (arXiv:2211.02744v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.02744">
+<summary class="article-expander__title">Looking at the Overlooked: An Analysis on the Word-Overlap Bias in Natural Language Inference. (arXiv:2211.03862v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03862">
 <div class="article-summary-box-inner">
-<span><p>The ability of knowledge graphs to represent complex relationships at scale
-has led to their adoption for various needs including knowledge representation,
-question-answering, fraud detection, and recommendation systems. Knowledge
-graphs are often incomplete in the information they represent, necessitating
-the need for knowledge graph completion tasks, such as link and relation
-prediction. Pre-trained and fine-tuned language models have shown promise in
-these tasks although these models ignore the intrinsic information encoded in
-the knowledge graph, namely the entity and relation types. In this work, we
-propose the Knowledge Graph Language Model (KGLM) architecture, where we
-introduce a new entity/relation embedding layer that learns to differentiate
-distinctive entity and relation types, therefore allowing the model to learn
-the structure of the knowledge graph. In this work, we show that further
-pre-training the language models with this additional embedding layer using the
-triples extracted from the knowledge graph, followed by the standard
-fine-tuning phase sets a new state-of-the-art performance for the link
-prediction task on the benchmark datasets.
+<span><p>It has been shown that NLI models are usually biased with respect to the
+word-overlap between premise and hypothesis; they take this feature as a
+primary cue for predicting the entailment label. In this paper, we focus on an
+overlooked aspect of the overlap bias in NLI models: the reverse word-overlap
+bias. Our experimental results demonstrate that current NLI models are highly
+biased towards the non-entailment label on instances with low overlap, and the
+existing debiasing methods, which are reportedly successful on existing
+challenge datasets, are generally ineffective in addressing this category of
+bias. We investigate the reasons for the emergence of the overlap bias and the
+role of minority examples in its mitigation. For the former, we find that the
+word-overlap bias does not stem from pre-training, and for the latter, we
+observe that in contrast to the accepted assumption, eliminating minority
+examples does not affect the generalizability of debiasing methods with respect
+to the overlap bias.
 </p></span>
 </div>
 </a>
@@ -97,21 +99,20 @@ prediction task on the benchmark datasets.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">LAMASSU: Streaming Language-Agnostic Multilingual Speech Recognition and Translation Using Neural Transducers. (arXiv:2211.02809v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.02809">
+<summary class="article-expander__title">Strictly Breadth-First AMR Parsing. (arXiv:2211.03922v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03922">
 <div class="article-summary-box-inner">
-<span><p>End-to-end formulation of automatic speech recognition (ASR) and speech
-translation (ST) makes it easy to use a single model for both multilingual ASR
-and many-to-many ST. In this paper, we propose streaming language-agnostic
-multilingual speech recognition and translation using neural transducers
-(LAMASSU). To enable multilingual text generation in LAMASSU, we conduct a
-systematic comparison between specified and unified prediction and joint
-networks. We leverage a language-agnostic multilingual encoder that
-substantially outperforms shared encoders. To enhance LAMASSU, we propose to
-feed target LID to encoders. We also apply connectionist temporal
-classification regularization to transducer training. Experimental results show
-that LAMASSU not only drastically reduces the model size but also outperforms
-monolingual ASR and bilingual ST models.
+<span><p>AMR parsing is the task that maps a sentence to an AMR semantic graph
+automatically. We focus on the breadth-first strategy of this task, which was
+proposed recently and achieved better performance than other strategies.
+However, current models under this strategy only \emph{encourage} the model to
+produce the AMR graph in breadth-first order, but \emph{cannot guarantee} this.
+To solve this problem, we propose a new architecture that \emph{guarantees}
+that the parsing will strictly follow the breadth-first order. In each parsing
+step, we introduce a \textbf{focused parent} vertex and use this vertex to
+guide the generation. With the help of this new architecture and some other
+improvements in the sentence and graph encoder, our model obtains better
+performance on both the AMR 1.0 and 2.0 dataset.
 </p></span>
 </div>
 </a>
@@ -119,24 +120,21 @@ monolingual ASR and bilingual ST models.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Hierarchical Multi-Label Classification of Scientific Documents. (arXiv:2211.02810v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.02810">
+<summary class="article-expander__title">Proactive Detractor Detection Framework Based on Message-Wise Sentiment Analysis Over Customer Support Interactions. (arXiv:2211.03923v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03923">
 <div class="article-summary-box-inner">
-<span><p>Automatic topic classification has been studied extensively to assist
-managing and indexing scientific documents in a digital collection. With the
-large number of topics being available in recent years, it has become necessary
-to arrange them in a hierarchy. Therefore, the automatic classification systems
-need to be able to classify the documents hierarchically. In addition, each
-paper is often assigned to more than one relevant topic. For example, a paper
-can be assigned to several topics in a hierarchy tree. In this paper, we
-introduce a new dataset for hierarchical multi-label text classification
-(HMLTC) of scientific papers called SciHTC, which contains 186,160 papers and
-1,233 categories from the ACM CCS tree. We establish strong baselines for HMLTC
-and propose a multi-task learning approach for topic classification with
-keyword labeling as an auxiliary task. Our best model achieves a Macro-F1 score
-of 34.57% which shows that this dataset provides significant research
-opportunities on hierarchical scientific topic classification. We make our
-dataset and code available on Github.
+<span><p>In this work, we propose a framework relying solely on chat-based customer
+support (CS) interactions for predicting the recommendation decision of
+individual users. For our case study, we analyzed a total number of 16.4k users
+and 48.7k customer support conversations within the financial vertical of a
+large e-commerce company in Latin America. Consequently, our main contributions
+and objectives are to use Natural Language Processing (NLP) to assess and
+predict the recommendation behavior where, in addition to using static
+sentiment analysis, we exploit the predictive power of each user's sentiment
+dynamics. Our results show that, with respective feature interpretability, it
+is possible to predict the likelihood of a user to recommend a product or
+service, based solely on the message-wise sentiment evolution of their CS
+conversations in a fully automated way.
 </p></span>
 </div>
 </a>
@@ -144,20 +142,25 @@ dataset and code available on Github.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Evaluation of Automated Speech Recognition Systems for Conversational Speech: A Linguistic Perspective. (arXiv:2211.02812v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.02812">
+<summary class="article-expander__title">Comparative layer-wise analysis of self-supervised speech models. (arXiv:2211.03929v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03929">
 <div class="article-summary-box-inner">
-<span><p>Automatic speech recognition (ASR) meets more informal and free-form input
-data as voice user interfaces and conversational agents such as the voice
-assistants such as Alexa, Google Home, etc., gain popularity. Conversational
-speech is both the most difficult and environmentally relevant sort of data for
-speech recognition. In this paper, we take a linguistic perspective, and take
-the French language as a case study toward disambiguation of the French
-homophones. Our contribution aims to provide more insight into human speech
-transcription accuracy in conditions to reproduce those of state-of-the-art ASR
-systems, although in a much focused situation. We investigate a case study
-involving the most common errors encountered in the automatic transcription of
-French language.
+<span><p>Many self-supervised speech models, varying in their pre-training objective,
+input modality, and pre-training data, have been proposed in the last few
+years. Despite impressive empirical successes on downstream tasks, we still
+have a limited understanding of the properties encoded by the models and the
+differences across models. In this work, we examine the intermediate
+representations for a variety of recent models. Specifically, we measure
+acoustic, phonetic, and word-level properties encoded in individual layers,
+using a lightweight analysis tool based on canonical correlation analysis
+(CCA). We find that these properties evolve across layers differently depending
+on the model, and the variations relate to the choice of pre-training
+objective. We further investigate the utility of our analyses for downstream
+tasks by comparing the property trends with performance on speech recognition
+and spoken language understanding tasks. We discover that CCA trends provide
+reliable guidance to choose layers of interest for downstream tasks and that
+single-layer performance often matches or improves upon using all layers,
+suggesting implications for more efficient use of pre-trained models.
 </p></span>
 </div>
 </a>
@@ -165,31 +168,30 @@ French language.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">PASTA: Table-Operations Aware Fact Verification via Sentence-Table Cloze Pre-training. (arXiv:2211.02816v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.02816">
+<summary class="article-expander__title">Tell Your Story: Task-Oriented Dialogs for Interactive Content Creation. (arXiv:2211.03940v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03940">
 <div class="article-summary-box-inner">
-<span><p>Fact verification has attracted a lot of research attention recently, e.g.,
-in journalism, marketing, and policymaking, as misinformation and
-disinformation online can sway one's opinion and affect one's actions. While
-fact-checking is a hard task in general, in many cases, false statements can be
-easily debunked based on analytics over tables with reliable information.
-Hence, table-based fact verification has recently emerged as an important and
-growing research area. Yet, progress has been limited due to the lack of
-datasets that can be used to pre-train language models (LMs) to be aware of
-common table operations, such as aggregating a column or comparing tuples. To
-bridge this gap, in this paper we introduce PASTA, a novel state-of-the-art
-framework for table-based fact verification via pre-training with synthesized
-sentence-table cloze questions. In particular, we design six types of common
-sentence-table cloze tasks, including Filter, Aggregation, Superlative,
-Comparative, Ordinal, and Unique, based on which we synthesize a large corpus
-consisting of 1.2 million sentence-table pairs from WikiTables. PASTA uses a
-recent pre-trained LM, DeBERTaV3, and further pretrains it on our corpus. Our
-experimental results show that PASTA achieves new state-of-the-art performance
-on two table-based fact verification benchmarks: TabFact and SEM-TAB-FACTS. In
-particular, on the complex set of TabFact, which contains multiple operations,
-PASTA largely outperforms the previous state of the art by 4.7 points (85.6%
-vs. 80.9%), and the gap between PASTA and human performance on the small
-TabFact test set is narrowed to just 1.5 points (90.6% vs. 92.1%).
+<span><p>People capture photos and videos to relive and share memories of personal
+significance. Recently, media montages (stories) have become a popular mode of
+sharing these memories due to their intuitive and powerful storytelling
+capabilities. However, creating such montages usually involves a lot of manual
+searches, clicks, and selections that are time-consuming and cumbersome,
+adversely affecting user experiences.
+</p>
+<p>To alleviate this, we propose task-oriented dialogs for montage creation as a
+novel interactive tool to seamlessly search, compile, and edit montages from a
+media collection. To the best of our knowledge, our work is the first to
+leverage multi-turn conversations for such a challenging application, extending
+the previous literature studying simple media retrieval tasks. We collect a new
+dataset C3 (Conversational Content Creation), comprising 10k dialogs
+conditioned on media montages simulated from a large media collection.
+</p>
+<p>We take a simulate-and-paraphrase approach to collect these dialogs to be
+both cost and time efficient, while drawing from natural language distribution.
+Our analysis and benchmarking of state-of-the-art language models showcase the
+multimodal challenges present in the dataset. Lastly, we present a real-world
+mobile demo application that shows the feasibility of the proposed work in
+real-world applications. Our code and data will be made publicly available.
 </p></span>
 </div>
 </a>
@@ -197,25 +199,26 @@ TabFact test set is narrowed to just 1.5 points (90.6% vs. 92.1%).
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">EventEA: Benchmarking Entity Alignment for Event-centric Knowledge Graphs. (arXiv:2211.02817v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.02817">
+<summary class="article-expander__title">Parameter and Data Efficient Continual Pre-training for Robustness to Dialectal Variance in Arabic. (arXiv:2211.03966v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03966">
 <div class="article-summary-box-inner">
-<span><p>Entity alignment is to find identical entities in different knowledge graphs
-(KGs) that refer to the same real-world object. Embedding-based entity
-alignment techniques have been drawing a lot of attention recently because they
-can help solve the issue of symbolic heterogeneity in different KGs. However,
-in this paper, we show that the progress made in the past was due to biased and
-unchallenging evaluation. We highlight two major flaws in existing datasets
-that favor embedding-based entity alignment techniques, i.e., the isomorphic
-graph structures in relation triples and the weak heterogeneity in attribute
-triples. Towards a critical evaluation of embedding-based entity alignment
-methods, we construct a new dataset with heterogeneous relations and attributes
-based on event-centric KGs. We conduct extensive experiments to evaluate
-existing popular methods, and find that they fail to achieve promising
-performance. As a new approach to this difficult problem, we propose a
-time-aware literal encoder for entity alignment. The dataset and source code
-are publicly available to foster future research. Our work calls for more
-effective and practical embedding-based solutions to entity alignment.
+<span><p>The use of multilingual language models for tasks in low and high-resource
+languages has been a success story in deep learning. In recent times, Arabic
+has been receiving widespread attention on account of its dialectal variance.
+While prior research studies have tried to adapt these multilingual models for
+dialectal variants of Arabic, it still remains a challenging problem owing to
+the lack of sufficient monolingual dialectal data and parallel translation data
+of such dialectal variants. It remains an open problem on whether the limited
+dialectical data can be used to improve the models trained in Arabic on its
+dialectal variants. First, we show that multilingual-BERT (mBERT) incrementally
+pretrained on Arabic monolingual data takes less training time and yields
+comparable accuracy when compared to our custom monolingual Arabic model and
+beat existing models (by an avg metric of +$6.41$). We then explore two
+continual pre-training methods -- (1) using small amounts of dialectical data
+for continual finetuning and (2) parallel Arabic to English data and a
+Translation Language Modeling loss function. We show that both approaches help
+improve performance on dialectal classification tasks ($+4.64$ avg. gain) when
+used on monolingual models.
 </p></span>
 </div>
 </a>
@@ -223,25 +226,25 @@ effective and practical embedding-based solutions to entity alignment.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Aligning Recommendation and Conversation via Dual Imitation. (arXiv:2211.02848v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.02848">
+<summary class="article-expander__title">Unsupervised Domain Adaptation for Sparse Retrieval by Filling Vocabulary and Word Frequency Gaps. (arXiv:2211.03988v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03988">
 <div class="article-summary-box-inner">
-<span><p>Human conversations of recommendation naturally involve the shift of
-interests which can align the recommendation actions and conversation process
-to make accurate recommendations with rich explanations. However, existing
-conversational recommendation systems (CRS) ignore the advantage of user
-interest shift in connecting recommendation and conversation, which leads to an
-ineffective loose coupling structure of CRS. To address this issue, by modeling
-the recommendation actions as recommendation paths in a knowledge graph (KG),
-we propose DICR (Dual Imitation for Conversational Recommendation), which
-designs a dual imitation to explicitly align the recommendation paths and user
-interest shift paths in a recommendation module and a conversation module,
-respectively. By exchanging alignment signals, DICR achieves bidirectional
-promotion between recommendation and conversation modules and generates
-high-quality responses with accurate recommendations and coherent explanations.
-Experiments demonstrate that DICR outperforms the state-of-the-art models on
-recommendation and conversation performance with automatic, human, and novel
-explainability metrics.
+<span><p>IR models using a pretrained language model significantly outperform lexical
+approaches like BM25. In particular, SPLADE, which encodes texts to sparse
+vectors, is an effective model for practical use because it shows robustness to
+out-of-domain datasets. However, SPLADE still struggles with exact matching of
+low-frequency words in training data. In addition, domain shifts in vocabulary
+and word frequencies deteriorate the IR performance of SPLADE. Because
+supervision data are scarce in the target domain, addressing the domain shifts
+without supervision data is necessary. This paper proposes an unsupervised
+domain adaptation method by filling vocabulary and word-frequency gaps. First,
+we expand a vocabulary and execute continual pretraining with a masked language
+model on a corpus of the target domain. Then, we multiply SPLADE-encoded sparse
+vectors by inverse document frequency weights to consider the importance of
+documents with lowfrequency words. We conducted experiments using our method on
+datasets with a large vocabulary gap from a source domain. We show that our
+method outperforms the present stateof-the-art domain adaptation method. In
+addition, our method achieves state-of-the-art results, combined with BM25.
 </p></span>
 </div>
 </a>
@@ -249,27 +252,28 @@ explainability metrics.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">BEKG: A Built Environment Knowledge Graph. (arXiv:2211.02864v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.02864">
+<summary class="article-expander__title">Robust Unstructured Knowledge Access in Conversational Dialogue with ASR Errors. (arXiv:2211.03990v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03990">
 <div class="article-summary-box-inner">
-<span><p>Practices in the built environment have become more digitalized with the
-rapid development of modern design and construction technologies. However, the
-requirement of practitioners or scholars to gather complicated professional
-knowledge in the built environment has not been satisfied yet. In this paper,
-more than 80,000 paper abstracts in the built environment field were obtained
-to build a knowledge graph, a knowledge base storing entities and their
-connective relations in a graph-structured data model. To ensure the retrieval
-accuracy of the entities and relations in the knowledge graph, two
-well-annotated datasets have been created, containing 2,000 instances and 1,450
-instances each in 29 relations for the named entity recognition task and
-relation extraction task respectively. These two tasks were solved by two
-BERT-based models trained on the proposed dataset. Both models attained an
-accuracy above 85% on these two tasks. More than 200,000 high-quality relations
-and entities were obtained using these models to extract all abstract data.
-Finally, this knowledge graph is presented as a self-developed visualization
-system to reveal relations between various entities in the domain. Both the
-source code and the annotated dataset can be found here:
-https://github.com/HKUST-KnowComp/BEKG.
+<span><p>Performance of spoken language understanding (SLU) can be degraded with
+automatic speech recognition (ASR) errors. We propose a novel approach to
+improve SLU robustness by randomly corrupting clean training text with an ASR
+error simulator, followed by self-correcting the errors and minimizing the
+target classification loss in a joint manner. In the proposed error simulator,
+we leverage confusion networks generated from an ASR decoder without human
+transcriptions to generate a variety of error patterns for model training. We
+evaluate our approach on the DSTC10 challenge targeted for knowledge-grounded
+task-oriented conversational dialogues with ASR errors. Experimental results
+show the effectiveness of our proposed approach, boosting the knowledge-seeking
+turn detection (KTD) F1 significantly from 0.9433 to 0.9904. Knowledge cluster
+classification is boosted from 0.7924 to 0.9333 in Recall@1. After knowledge
+document re-ranking, our approach shows significant improvement in all
+knowledge selection metrics, from 0.7358 to 0.7806 in Recall@1, from 0.8301 to
+0.9333 in Recall@5, and from 0.7798 to 0.8460 in MRR@5 on the test set. In the
+recent DSTC10 evaluation, our approach demonstrates significant improvement in
+knowledge selection, boosting Recall@1 from 0.495 to 0.7144 compared to the
+official baseline. Our source code is released in GitHub
+https://github.com/yctam/dstc10_track2_task2.git.
 </p></span>
 </div>
 </a>
@@ -277,26 +281,19 @@ https://github.com/HKUST-KnowComp/BEKG.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Textual Manifold-based Defense Against Natural Language Adversarial Examples. (arXiv:2211.02878v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.02878">
+<summary class="article-expander__title">COV19IR : COVID-19 Domain Literature Information Retrieval. (arXiv:2211.04013v1 [cs.IR])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04013">
 <div class="article-summary-box-inner">
-<span><p>Recent studies on adversarial images have shown that they tend to leave the
-underlying low-dimensional data manifold, making them significantly more
-challenging for current models to make correct predictions. This so-called
-off-manifold conjecture has inspired a novel line of defenses against
-adversarial attacks on images. In this study, we find a similar phenomenon
-occurs in the contextualized embedding space induced by pretrained language
-models, in which adversarial texts tend to have their embeddings diverge from
-the manifold of natural ones. Based on this finding, we propose Textual
-Manifold-based Defense (TMD), a defense mechanism that projects text embeddings
-onto an approximated embedding manifold before classification. It reduces the
-complexity of potential adversarial examples, which ultimately enhances the
-robustness of the protected model. Through extensive experiments, our method
-consistently and significantly outperforms previous defenses under various
-attack settings without trading off clean accuracy. To the best of our
-knowledge, this is the first NLP defense that leverages the manifold structure
-against adversarial attacks. Our code is available at
-\url{https://github.com/dangne/tmd}.
+<span><p>Increasing number of COVID-19 research literatures cause new challenges in
+effective literature screening and COVID-19 domain knowledge aware Information
+Retrieval. To tackle the challenges, we demonstrate two tasks along
+withsolutions, COVID-19 literature retrieval, and question answering. COVID-19
+literature retrieval task screens matching COVID-19 literature documents for
+textual user query, and COVID-19 question answering task predicts proper text
+fragments from text corpus as the answer of specific COVID-19 related
+questions. Based on transformer neural network, we provided solutions to
+implement the tasks on CORD-19 dataset, we display some examples to show the
+effectiveness of our proposed solutions.
 </p></span>
 </div>
 </a>
@@ -304,23 +301,25 @@ against adversarial attacks. Our code is available at
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">HERB: Measuring Hierarchical Regional Bias in Pre-trained Language Models. (arXiv:2211.02882v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.02882">
+<summary class="article-expander__title">A Dynamic Graph Interactive Framework with Label-Semantic Injection for Spoken Language Understanding. (arXiv:2211.04023v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04023">
 <div class="article-summary-box-inner">
-<span><p>Fairness has become a trending topic in natural language processing (NLP),
-which addresses biases targeting certain social groups such as genders and
-religions. However, regional bias in language models (LMs), a long-standing
-global discrimination problem, still remains unexplored. This paper bridges the
-gap by analysing the regional bias learned by the pre-trained language models
-that are broadly used in NLP tasks. In addition to verifying the existence of
-regional bias in LMs, we find that the biases on regional groups can be
-strongly influenced by the geographical clustering of the groups. We
-accordingly propose a HiErarchical Regional Bias evaluation method (HERB)
-utilising the information from the sub-region clusters to quantify the bias in
-pre-trained LMs. Experiments show that our hierarchical metric can effectively
-evaluate the regional bias with respect to comprehensive topics and measure the
-potential regional bias that can be propagated to downstream tasks. Our codes
-are available at https://github.com/Bernard-Yang/HERB.
+<span><p>Multi-intent detection and slot filling joint models are gaining increasing
+traction since they are closer to complicated real-world scenarios. However,
+existing approaches (1) focus on identifying implicit correlations between
+utterances and one-hot encoded labels in both tasks while ignoring explicit
+label characteristics; (2) directly incorporate multi-intent information for
+each token, which could lead to incorrect slot prediction due to the
+introduction of irrelevant intent. In this paper, we propose a framework termed
+DGIF, which first leverages the semantic information of labels to give the
+model additional signals and enriched priors. Then, a multi-grain interactive
+graph is constructed to model correlations between intents and slots.
+Specifically, we propose a novel approach to construct the interactive graph
+based on the injection of label semantics, which can automatically update the
+graph to better alleviate error propagation. Experimental results show that our
+framework significantly outperforms existing approaches, obtaining a relative
+improvement of 13.7% over the previous best model on the MixATIS dataset in
+overall accuracy.
 </p></span>
 </div>
 </a>
@@ -328,28 +327,21 @@ are available at https://github.com/Bernard-Yang/HERB.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Tri-Attention: Explicit Context-Aware Attention Mechanism for Natural Language Processing. (arXiv:2211.02899v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.02899">
+<summary class="article-expander__title">What Knowledge Is Needed? Towards Explainable Memory for kNN-MT Domain Adaptation. (arXiv:2211.04052v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04052">
 <div class="article-summary-box-inner">
-<span><p>In natural language processing (NLP), the context of a word or sentence plays
-an essential role. Contextual information such as the semantic representation
-of a passage or historical dialogue forms an essential part of a conversation
-and a precise understanding of the present phrase or sentence. However, the
-standard attention mechanisms typically generate weights using query and key
-but ignore context, forming a Bi-Attention framework, despite their great
-success in modeling sequence alignment. This Bi-Attention mechanism does not
-explicitly model the interactions between the contexts, queries and keys of
-target sequences, missing important contextual information and resulting in
-poor attention performance. Accordingly, a novel and general triple-attention
-(Tri-Attention) framework expands the standard Bi-Attention mechanism and
-explicitly interacts query, key, and context by incorporating context as the
-third dimension in calculating relevance scores. Four variants of Tri-Attention
-are generated by expanding the two-dimensional vector-based additive,
-dot-product, scaled dot-product, and bilinear operations in Bi-Attention to the
-tensor operations for Tri-Attention. Extensive experiments on three NLP tasks
-demonstrate that Tri-Attention outperforms about 30 state-of-the-art
-non-attention, standard Bi-Attention, contextual Bi-Attention approaches and
-pretrained neural language models1.
+<span><p>kNN-MT presents a new paradigm for domain adaptation by building an external
+datastore, which usually saves all target language token occurrences in the
+parallel corpus. As a result, the constructed datastore is usually large and
+possibly redundant. In this paper, we investigate the interpretability issue of
+this approach: what knowledge does the NMT model need? We propose the notion of
+local correctness (LAC) as a new angle, which describes the potential
+translation correctness for a single entry and for a given neighborhood.
+Empirical study shows that our investigation successfully finds the conditions
+where the NMT model could easily fail and need related knowledge. Experiments
+on six diverse target domains and two language-pairs show that pruning
+according to local correctness brings a light and more explainable memory for
+kNN-MT domain adaptation.
 </p></span>
 </div>
 </a>
@@ -357,18 +349,34 @@ pretrained neural language models1.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">The Legal Argument Reasoning Task in Civil Procedure. (arXiv:2211.02950v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.02950">
+<summary class="article-expander__title">ATCO2 corpus: A Large-Scale Dataset for Research on Automatic Speech Recognition and Natural Language Understanding of Air Traffic Control Communications. (arXiv:2211.04054v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04054">
 <div class="article-summary-box-inner">
-<span><p>We present a new NLP task and dataset from the domain of the U.S. civil
-procedure. Each instance of the dataset consists of a general introduction to
-the case, a particular question, and a possible solution argument, accompanied
-by a detailed analysis of why the argument applies in that case. Since the
-dataset is based on a book aimed at law students, we believe that it represents
-a truly complex task for benchmarking modern legal language models. Our
-baseline evaluation shows that fine-tuning a legal transformer provides some
-advantage over random baseline models, but our analysis reveals that the actual
-ability to infer legal arguments remains a challenging open research question.
+<span><p>Personal assistants, automatic speech recognizers and dialogue understanding
+systems are becoming more critical in our interconnected digital world. A clear
+example is air traffic control (ATC) communications. ATC aims at guiding
+aircraft and controlling the airspace in a safe and optimal manner. These
+voice-based dialogues are carried between an air traffic controller (ATCO) and
+pilots via very-high frequency radio channels. In order to incorporate these
+novel technologies into ATC (low-resource domain), large-scale annotated
+datasets are required to develop the data-driven AI systems. Two examples are
+automatic speech recognition (ASR) and natural language understanding (NLU). In
+this paper, we introduce the ATCO2 corpus, a dataset that aims at fostering
+research on the challenging ATC field, which has lagged behind due to lack of
+annotated data. The ATCO2 corpus covers 1) data collection and pre-processing,
+2) pseudo-annotations of speech data, and 3) extraction of ATC-related named
+entities. The ATCO2 corpus is split into three subsets. 1) ATCO2-test-set
+corpus contains 4 hours of ATC speech with manual transcripts and a subset with
+gold annotations for named-entity recognition (callsign, command, value). 2)
+The ATCO2-PL-set corpus consists of 5281 hours of unlabeled ATC data enriched
+with automatic transcripts from an in-domain speech recognizer, contextual
+information, speaker turn information, signal-to-noise ratio estimate and
+English language detection score per sample. Both available for purchase
+through ELDA at <a href="http://catalog.elra.info/en-us/repository/browse/ELRA-S0484.">this http URL</a> 3)
+The ATCO2-test-set-1h corpus is a one-hour subset from the original test set
+corpus, that we are offering for free at https://www.atco2.org/data. We expect
+the ATCO2 corpus will foster research on robust ASR and NLU not only in the
+field of ATC communications but also in the general research community.
 </p></span>
 </div>
 </a>
@@ -376,22 +384,27 @@ ability to infer legal arguments remains a challenging open research question.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Privacy-Preserving Models for Legal Natural Language Processing. (arXiv:2211.02956v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.02956">
+<summary class="article-expander__title">High-resolution embedding extractor for speaker diarisation. (arXiv:2211.04060v1 [cs.SD])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04060">
 <div class="article-summary-box-inner">
-<span><p>Pre-training large transformer models with in-domain data improves domain
-adaptation and helps gain performance on the domain-specific downstream tasks.
-However, sharing models pre-trained on potentially sensitive data is prone to
-adversarial privacy attacks. In this paper, we asked to which extent we can
-guarantee privacy of pre-training data and, at the same time, achieve better
-downstream performance on legal tasks without the need of additional labeled
-data. We extensively experiment with scalable self-supervised learning of
-transformer models under the formal paradigm of differential privacy and show
-that under specific training configurations we can improve downstream
-performance without sacrifying privacy protection for the in-domain data. Our
-main contribution is utilizing differential privacy for large-scale
-pre-training of transformer language models in the legal NLP domain, which, to
-the best of our knowledge, has not been addressed before.
+<span><p>Speaker embedding extractors significantly influence the performance of
+clustering-based speaker diarisation systems. Conventionally, only one
+embedding is extracted from each speech segment. However, because of the
+sliding window approach, a segment easily includes two or more speakers owing
+to speaker change points. This study proposes a novel embedding extractor
+architecture, referred to as a high-resolution embedding extractor (HEE), which
+extracts multiple high-resolution embeddings from each speech segment. Hee
+consists of a feature-map extractor and an enhancer, where the enhancer with
+the self-attention mechanism is the key to success. The enhancer of HEE
+replaces the aggregation process; instead of a global pooling layer, the
+enhancer combines relative information to each frame via attention leveraging
+the global context. Extracted dense frame-level embeddings can each represent a
+speaker. Thus, multiple speakers can be represented by different frame-level
+features in each segment. We also propose an artificially generating mixture
+data training framework to train the proposed HEE. Through experiments on five
+evaluation sets, including four public datasets, the proposed HEE demonstrates
+at least 10% improvement on each evaluation set, except for one dataset, which
+we analyse that rapid speaker changes less exist.
 </p></span>
 </div>
 </a>
@@ -399,27 +412,24 @@ the best of our knowledge, has not been addressed before.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Learning to Infer from Unlabeled Data: A Semi-supervised Learning Approach for Robust Natural Language Inference. (arXiv:2211.02971v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.02971">
+<summary class="article-expander__title">COPEN: Probing Conceptual Knowledge in Pre-trained Language Models. (arXiv:2211.04079v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04079">
 <div class="article-summary-box-inner">
-<span><p>Natural Language Inference (NLI) or Recognizing Textual Entailment (RTE) aims
-at predicting the relation between a pair of sentences (premise and hypothesis)
-as entailment, contradiction or semantic independence. Although deep learning
-models have shown promising performance for NLI in recent years, they rely on
-large scale expensive human-annotated datasets. Semi-supervised learning (SSL)
-is a popular technique for reducing the reliance on human annotation by
-leveraging unlabeled data for training. However, despite its substantial
-success on single sentence classification tasks where the challenge in making
-use of unlabeled data is to assign "good enough" pseudo-labels, for NLI tasks,
-the nature of unlabeled data is more complex: one of the sentences in the pair
-(usually the hypothesis) along with the class label are missing from the data
-and require human annotations, which makes SSL for NLI more challenging. In
-this paper, we propose a novel way to incorporate unlabeled data in SSL for NLI
-where we use a conditional language model, BART to generate the hypotheses for
-the unlabeled sentences (used as premises). Our experiments show that our SSL
-framework successfully exploits unlabeled data and substantially improves the
-performance of four NLI datasets in low-resource settings. We release our code
-at: https://github.com/msadat3/SSL_for_NLI.
+<span><p>Conceptual knowledge is fundamental to human cognition and knowledge bases.
+However, existing knowledge probing works only focus on evaluating factual
+knowledge of pre-trained language models (PLMs) and ignore conceptual
+knowledge. Since conceptual knowledge often appears as implicit commonsense
+behind texts, designing probes for conceptual knowledge is hard. Inspired by
+knowledge representation schemata, we comprehensively evaluate conceptual
+knowledge of PLMs by designing three tasks to probe whether PLMs organize
+entities by conceptual similarities, learn conceptual properties, and
+conceptualize entities in contexts, respectively. For the tasks, we collect and
+annotate 24k data instances covering 393 concepts, which is COPEN, a COnceptual
+knowledge Probing bENchmark. Extensive experiments on different sizes and types
+of PLMs show that existing PLMs systematically lack conceptual knowledge and
+suffer from various spurious correlations. We believe this is a critical
+bottleneck for realizing human-like cognition in PLMs. COPEN and our codes are
+publicly released at https://github.com/THU-KEG/COPEN.
 </p></span>
 </div>
 </a>
@@ -427,26 +437,26 @@ at: https://github.com/msadat3/SSL_for_NLI.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">A Comparison of Automatic Labelling Approaches for Sentiment Analysis. (arXiv:2211.02976v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.02976">
+<summary class="article-expander__title">ConsPrompt: Easily Exploiting Contrastive Samples for Few-shot Prompt Learning. (arXiv:2211.04118v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04118">
 <div class="article-summary-box-inner">
-<span><p>Labelling a large quantity of social media data for the task of supervised
-machine learning is not only time-consuming but also difficult and expensive.
-On the other hand, the accuracy of supervised machine learning models is
-strongly related to the quality of the labelled data on which they train, and
-automatic sentiment labelling techniques could reduce the time and cost of
-human labelling. We have compared three automatic sentiment labelling
-techniques: TextBlob, Vader, and Afinn to assign sentiments to tweets without
-any human assistance. We compare three scenarios: one uses training and testing
-datasets with existing ground truth labels; the second experiment uses
-automatic labels as training and testing datasets; and the third experiment
-uses three automatic labelling techniques to label the training dataset and
-uses the ground truth labels for testing. The experiments were evaluated on two
-Twitter datasets: SemEval-2013 (DS-1) and SemEval-2016 (DS-2). Results show
-that the Afinn labelling technique obtains the highest accuracy of 80.17%
-(DS-1) and 80.05% (DS-2) using a BiLSTM deep learning model. These findings
-imply that automatic text labelling could provide significant benefits, and
-suggest a feasible alternative to the time and cost of human labelling efforts.
+<span><p>Prompt learning recently become an effective linguistic tool to motivate the
+PLMs' knowledge on few-shot-setting tasks. However, studies have shown the lack
+of robustness still exists in prompt learning, since suitable initialization of
+continuous prompt and expert-first manual prompt are essential in fine-tuning
+process. What is more, human also utilize their comparative ability to motivate
+their existing knowledge for distinguishing different examples. Motivated by
+this, we explore how to use contrastive samples to strengthen prompt learning.
+In detail, we first propose our model ConsPrompt combining with prompt encoding
+network, contrastive sampling module, and contrastive scoring module.
+Subsequently, two sampling strategies, similarity-based and label-based
+strategies, are introduced to realize differential contrastive learning. The
+effectiveness of proposed ConsPrompt is demonstrated in five different few-shot
+learning tasks and shown the similarity-based sampling strategy is more
+effective than label-based in combining contrastive learning. Our results also
+exhibits the state-of-the-art performance and robustness in different few-shot
+settings, which proves that the ConsPrompt could be assumed as a better
+knowledge probe to motivate PLMs.
 </p></span>
 </div>
 </a>
@@ -454,21 +464,21 @@ suggest a feasible alternative to the time and cost of human labelling efforts.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Semantic Metadata Extraction from Dense Video Captioning. (arXiv:2211.02982v1 [cs.CV])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.02982">
+<summary class="article-expander__title">Conciseness: An Overlooked Language Task. (arXiv:2211.04126v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04126">
 <div class="article-summary-box-inner">
-<span><p>Annotation of multimedia data by humans is time-consuming and costly, while
-reliable automatic generation of semantic metadata is a major challenge. We
-propose a framework to extract semantic metadata from automatically generated
-video captions. As metadata, we consider entities, the entities' properties,
-relations between entities, and the video category. We employ two
-state-of-the-art dense video captioning models with masked transformer (MT) and
-parallel decoding (PVDC) to generate captions for videos of the ActivityNet
-Captions dataset. Our experiments show that it is possible to extract entities,
-their properties, relations between entities, and the video category from the
-generated captions. We observe that the quality of the extracted information is
-mainly influenced by the quality of the event localization in the video as well
-as the performance of the event caption generation.
+<span><p>We report on novel investigations into training models that make sentences
+concise. We define the task and show that it is different from related tasks
+such as summarization and simplification. For evaluation, we release two test
+sets, consisting of 2000 sentences each, that were annotated by two and five
+human annotators, respectively. We demonstrate that conciseness is a difficult
+task for which zero-shot setups with large neural language models often do not
+perform well. Given the limitations of these approaches, we propose a synthetic
+data generation method based on round-trip translations. Using this data to
+either train Transformers from scratch or fine-tune T5 models yields our
+strongest baselines that can be further improved by fine-tuning on an
+artificial conciseness dataset that we derived from multi-annotator machine
+translation test sets.
 </p></span>
 </div>
 </a>
@@ -476,22 +486,22 @@ as the performance of the event caption generation.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Robust Lottery Tickets for Pre-trained Language Models. (arXiv:2211.03013v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03013">
+<summary class="article-expander__title">Active Learning with Tabular Language Models. (arXiv:2211.04128v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04128">
 <div class="article-summary-box-inner">
-<span><p>Recent works on Lottery Ticket Hypothesis have shown that pre-trained
-language models (PLMs) contain smaller matching subnetworks(winning tickets)
-which are capable of reaching accuracy comparable to the original models.
-However, these tickets are proved to be notrobust to adversarial examples, and
-even worse than their PLM counterparts. To address this problem, we propose a
-novel method based on learning binary weight masks to identify robust tickets
-hidden in the original PLMs. Since the loss is not differentiable for the
-binary mask, we assign the hard concrete distribution to the masks and
-encourage their sparsity using a smoothing approximation of L0
-regularization.Furthermore, we design an adversarial loss objective to guide
-the search for robust tickets and ensure that the tickets perform well bothin
-accuracy and robustness. Experimental results show the significant improvement
-of the proposed method over previous work on adversarial robustness evaluation.
+<span><p>Despite recent advancements in tabular language model research, real-world
+applications are still challenging. In industry, there is an abundance of
+tables found in spreadsheets, but acquisition of substantial amounts of labels
+is expensive, since only experts can annotate the often highly technical and
+domain-specific tables. Active learning could potentially reduce labeling
+costs, however, so far there are no works related to active learning in
+conjunction with tabular language models. In this paper we investigate
+different acquisition functions in a real-world industrial tabular language
+model use case for sub-cell named entity recognition. Our results show that
+cell-level acquisition functions with built-in diversity can significantly
+reduce the labeling effort, while enforced table diversity is detrimental. We
+further see open fundamental questions concerning computational efficiency and
+the perspective of human annotators.
 </p></span>
 </div>
 </a>
@@ -499,25 +509,19 @@ of the proposed method over previous work on adversarial robustness evaluation.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Bridging Speech and Textual Pre-trained Models with Unsupervised ASR. (arXiv:2211.03025v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03025">
+<summary class="article-expander__title">Perspectives on neural proof nets. (arXiv:2211.04141v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04141">
 <div class="article-summary-box-inner">
-<span><p>Spoken language understanding (SLU) is a task aiming to extract high-level
-semantics from spoken utterances. Previous works have investigated the use of
-speech self-supervised models and textual pre-trained models, which have shown
-reasonable improvements to various SLU tasks. However, because of the
-mismatched modalities between speech signals and text tokens, previous methods
-usually need complex designs of the frameworks. This work proposes a simple yet
-efficient unsupervised paradigm that connects speech and textual pre-trained
-models, resulting in an unsupervised speech-to-semantic pre-trained model for
-various tasks in SLU. To be specific, we propose to use unsupervised automatic
-speech recognition (ASR) as a connector that bridges different modalities used
-in speech and textual pre-trained models. Our experiments show that
-unsupervised ASR itself can improve the representations from speech
-self-supervised models. More importantly, it is shown as an efficient connector
-between speech and textual pre-trained models, improving the performances of
-five different SLU tasks. Notably, on spoken question answering, we reach the
-state-of-the-art result over the challenging NMSQA benchmark.
+<span><p>In this paper I will present a novel way of combining proof net proof search
+with neural networks. It contrasts with the 'standard' approach which has been
+applied to proof search in type-logical grammars in various different forms. In
+the standard approach, we first transform words to formulas (supertagging) then
+match atomic formulas to obtain a proof. I will introduce an alternative way to
+split the task into two: first, we generate the graph structure in a way which
+guarantees it corresponds to a lambda-term, then we obtain the detailed
+structure using vertex labelling. Vertex labelling is a well-studied task in
+graph neural networks, and different ways of implementing graph generation
+using neural networks will be explored.
 </p></span>
 </div>
 </a>
@@ -525,24 +529,27 @@ state-of-the-art result over the challenging NMSQA benchmark.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Prompt-based Text Entailment for Low-Resource Named Entity Recognition. (arXiv:2211.03039v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03039">
+<summary class="article-expander__title">Query-Specific Knowledge Graphs for Complex Finance Topics. (arXiv:2211.04142v1 [cs.IR])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04142">
 <div class="article-summary-box-inner">
-<span><p>Pre-trained Language Models (PLMs) have been applied in NLP tasks and achieve
-promising results. Nevertheless, the fine-tuning procedure needs labeled data
-of the target domain, making it difficult to learn in low-resource and
-non-trivial labeled scenarios. To address these challenges, we propose
-Prompt-based Text Entailment (PTE) for low-resource named entity recognition,
-which better leverages knowledge in the PLMs. We first reformulate named entity
-recognition as the text entailment task. The original sentence with entity
-type-specific prompts is fed into PLMs to get entailment scores for each
-candidate. The entity type with the top score is then selected as final label.
-Then, we inject tagging labels into prompts and treat words as basic units
-instead of n-gram spans to reduce time complexity in generating candidates by
-n-grams enumeration. Experimental results demonstrate that the proposed method
-PTE achieves competitive performance on the CoNLL03 dataset, and better than
-fine-tuned counterparts on the MIT Movie and Few-NERD dataset in low-resource
-settings.
+<span><p>Across the financial domain, researchers answer complex questions by
+extensively "searching" for relevant information to generate long-form reports.
+This workshop paper discusses automating the construction of query-specific
+document and entity knowledge graphs (KGs) for complex research topics. We
+focus on the CODEC dataset, where domain experts (1) create challenging
+questions, (2) construct long natural language narratives, and (3) iteratively
+search and assess the relevance of documents and entities. For the construction
+of query-specific KGs, we show that state-of-the-art ranking systems have
+headroom for improvement, with specific failings due to a lack of context or
+explicit knowledge representation. We demonstrate that entity and document
+relevance are positively correlated, and that entity-based query feedback
+improves document ranking effectiveness. Furthermore, we construct
+query-specific KGs using retrieval and evaluate using CODEC's "ground-truth
+graphs", showing the precision and recall trade-offs. Lastly, we point to
+future work, including adaptive KG retrieval algorithms and GNN-based weighting
+methods, while highlighting key challenges such as high-quality data,
+information extraction recall, and the size and sparsity of complex topic
+graphs.
 </p></span>
 </div>
 </a>
@@ -550,24 +557,25 @@ settings.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Calibration Meets Explanation: A Simple and Effective Approach for Model Confidence Estimates. (arXiv:2211.03041v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03041">
+<summary class="article-expander__title">Third-Party Aligner for Neural Word Alignments. (arXiv:2211.04198v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04198">
 <div class="article-summary-box-inner">
-<span><p>Calibration strengthens the trustworthiness of black-box models by producing
-better accurate confidence estimates on given examples. However, little is
-known about if model explanations can help confidence calibration. Intuitively,
-humans look at important features attributions and decide whether the model is
-trustworthy. Similarly, the explanations can tell us when the model may or may
-not know. Inspired by this, we propose a method named CME that leverages model
-explanations to make the model less confident with non-inductive attributions.
-The idea is that when the model is not highly confident, it is difficult to
-identify strong indications of any class, and the tokens accordingly do not
-have high attribution scores for any class and vice versa. We conduct extensive
-experiments on six datasets with two popular pre-trained language models in the
-in-domain and out-of-domain settings. The results show that CME improves
-calibration performance in all settings. The expected calibration errors are
-further reduced when combined with temperature scaling. Our findings highlight
-that model explanations can help calibrate posterior estimates.
+<span><p>Word alignment is to find translationally equivalent words between source and
+target sentences. Previous work has demonstrated that self-training can achieve
+competitive word alignment results. In this paper, we propose to use word
+alignments generated by a third-party word aligner to supervise the neural word
+alignment training. Specifically, source word and target word of each word pair
+aligned by the third-party aligner are trained to be close neighbors to each
+other in the contextualized embedding space when fine-tuning a pre-trained
+cross-lingual language model. Experiments on the benchmarks of various language
+pairs show that our approach can surprisingly do self-correction over the
+third-party supervision by finding more accurate word alignments and deleting
+wrong word alignments, leading to better performance than various third-party
+word aligners, including the currently best one. When we integrate all
+supervisions from various third-party aligners, we achieve state-of-the-art
+word alignment performances, with averagely more than two points lower
+alignment error rates than the best third-party aligner. We released our code
+at https://github.com/sdongchuanqi/Third-Party-Supervised-Aligner.
 </p></span>
 </div>
 </a>
@@ -575,27 +583,24 @@ that model explanations can help calibrate posterior estimates.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Tuning Language Models as Training Data Generators for Augmentation-Enhanced Few-Shot Learning. (arXiv:2211.03044v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03044">
+<summary class="article-expander__title">Preserving Semantics in Textual Adversarial Attacks. (arXiv:2211.04205v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04205">
 <div class="article-summary-box-inner">
-<span><p>Recent studies have revealed the intriguing few-shot learning ability of
-pretrained language models (PLMs): They can quickly adapt to a new task when
-fine-tuned on a small amount of labeled data formulated as prompts, without
-requiring abundant task-specific annotations. Despite their promising
-performance, most existing few-shot approaches that only learn from the small
-training set still underperform fully supervised training by nontrivial
-margins. In this work, we study few-shot learning with PLMs from a different
-perspective: We first tune an autoregressive PLM on the few-shot samples and
-then use it as a generator to synthesize a large amount of novel training
-samples which augment the original training set. To encourage the generator to
-produce label-discriminative samples, we train it via weighted maximum
-likelihood where the weight of each token is automatically adjusted based on a
-discriminative meta-learning objective. A classification PLM can then be
-fine-tuned on both the few-shot and the synthetic samples with regularization
-for better generalization and stability. Our approach FewGen achieves an
-overall better result across seven classification tasks of the GLUE benchmark
-than existing few-shot learning methods, improving no-augmentation methods by
-5+ average points, and outperforming augmentation methods by 3+ average points.
+<span><p>Adversarial attacks in NLP challenge the way we look at language models. The
+goal of this kind of adversarial attack is to modify the input text to fool a
+classifier while maintaining the original meaning of the text. Although most
+existing adversarial attacks claim to fulfill the constraint of semantics
+preservation, careful scrutiny shows otherwise. We show that the problem lies
+in the text encoders used to determine the similarity of adversarial examples,
+specifically in the way they are trained. Unsupervised training methods make
+these encoders more susceptible to problems with antonym recognition. To
+overcome this, we introduce a simple, fully supervised sentence embedding
+technique called Semantics-Preserving-Encoder (SPE). The results show that our
+solution minimizes the variation in the meaning of the adversarial examples
+generated. It also significantly improves the overall quality of adversarial
+examples, as confirmed by human evaluators. Furthermore, it can be used as a
+component in any existing attack to speed up its execution while maintaining
+similar attack success.
 </p></span>
 </div>
 </a>
@@ -603,26 +608,24 @@ than existing few-shot learning methods, improving no-augmentation methods by
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Knowledge is Power: Understanding Causality Makes Legal judgment Prediction Models More Generalizable and Robust. (arXiv:2211.03046v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03046">
+<summary class="article-expander__title">Active Relation Discovery: Towards General and Label-aware Open Relation Extraction. (arXiv:2211.04215v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04215">
 <div class="article-summary-box-inner">
-<span><p>Legal judgment Prediction (LJP), aiming to predict a judgment based on fact
-descriptions, serves as legal assistance to mitigate the great work burden of
-limited legal practitioners. Most existing methods apply various large-scale
-pre-trained language models (PLMs) finetuned in LJP tasks to obtain consistent
-improvements. However, we discover the fact that the state-of-the-art (SOTA)
-model makes judgment predictions according to wrong (or non-casual)
-information, which not only weakens the model's generalization capability but
-also results in severe social problems like discrimination. Here, we analyze
-the causal mechanism misleading the LJP model to learn the spurious
-correlations, and then propose a framework to guide the model to learn the
-underlying causality knowledge in the legal texts. Specifically, we first
-perform open information extraction (OIE) to refine the text having a high
-proportion of causal information, according to which we generate a new set of
-data. Then, we design a model learning the weights of the refined data and the
-raw data for LJP model training. The extensive experimental results show that
-our model is more generalizable and robust than the baselines and achieves a
-new SOTA performance on two commonly used legal-specific datasets.
+<span><p>Open Relation Extraction (OpenRE) aims to discover novel relations from open
+domains. Previous OpenRE methods mainly suffer from two problems: (1)
+Insufficient capacity to discriminate between known and novel relations. When
+extending conventional test settings to a more general setting where test data
+might also come from seen classes, existing approaches have a significant
+performance decline. (2) Secondary labeling must be performed before practical
+application. Existing methods cannot label human-readable and meaningful types
+for novel relations, which is urgently required by the downstream tasks. To
+address these issues, we propose the Active Relation Discovery (ARD) framework,
+which utilizes relational outlier detection for discriminating known and novel
+relations and involves active learning for labeling novel relations. Extensive
+experiments on three real-world datasets show that ARD significantly
+outperforms previous state-of-the-art methods on both conventional and our
+proposed general OpenRE settings. The source code and datasets will be
+available for reproducibility.
 </p></span>
 </div>
 </a>
@@ -630,21 +633,22 @@ new SOTA performance on two commonly used legal-specific datasets.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Suffix Retrieval-Augmented Language Modeling. (arXiv:2211.03053v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03053">
+<summary class="article-expander__title">Self-conditioned Embedding Diffusion for Text Generation. (arXiv:2211.04236v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04236">
 <div class="article-summary-box-inner">
-<span><p>Causal language modeling (LM) uses word history to predict the next word.
-BERT, on the other hand, makes use of bi-directional word information in a
-sentence to predict words at masked positions. While BERT is effective in
-sequence encoding, it is non-causal by nature and is not designed for sequence
-generation. In this paper, we propose a novel language model, SUffix
-REtrieval-Augmented LM (SUREALM), that simulates a bi-directional contextual
-effect in an autoregressive manner. SUREALM employs an embedding retriever to
-search for training sentences in a data store that share similar word history
-during sequence generation. In particular, the suffix portions of the retrieved
-sentences mimick the "future" context. We evaluated our proposed model on the
-DSTC9 spoken dialogue corpus and showed promising word perplexity reduction on
-the validation and test set compared to competitive baselines.
+<span><p>Can continuous diffusion models bring the same performance breakthrough on
+natural language they did for image generation? To circumvent the discrete
+nature of text data, we can simply project tokens in a continuous space of
+embeddings, as is standard in language modeling. We propose Self-conditioned
+Embedding Diffusion, a continuous diffusion mechanism that operates on token
+embeddings and allows to learn flexible and scalable diffusion models for both
+conditional and unconditional text generation. Through qualitative and
+quantitative evaluation, we show that our text diffusion models generate
+samples comparable with those produced by standard autoregressive language
+models - while being in theory more efficient on accelerator hardware at
+inference time. Our work paves the way for scaling up diffusion models for
+text, similarly to autoregressive models, and for improving performance with
+recent refinements to continuous diffusion.
 </p></span>
 </div>
 </a>
@@ -652,31 +656,22 @@ the validation and test set compared to competitive baselines.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Improved Target-specific Stance Detection on Social Media Platforms by Delving into Conversation Threads. (arXiv:2211.03061v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03061">
+<summary class="article-expander__title">DetAIL : A Tool to Automatically Detect and Analyze Drift In Language. (arXiv:2211.04250v1 [cs.LG])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04250">
 <div class="article-summary-box-inner">
-<span><p>Target-specific stance detection on social media, which aims at classifying a
-textual data instance such as a post or a comment into a stance class of a
-target issue, has become an emerging opinion mining paradigm of importance. An
-example application would be to overcome vaccine hesitancy in combating the
-coronavirus pandemic. However, existing stance detection strategies rely merely
-on the individual instances which cannot always capture the expressed stance of
-a given target. In response, we address a new task called conversational stance
-detection which is to infer the stance towards a given target (e.g., COVID-19
-vaccination) when given a data instance and its corresponding conversation
-thread. To tackle the task, we first propose a benchmarking conversational
-stance detection (CSD) dataset with annotations of stances and the structures
-of conversation threads among the instances based on six major social media
-platforms in Hong Kong. To infer the desired stances from both data instances
-and conversation threads, we propose a model called Branch-BERT that
-incorporates contextual information in conversation threads. Extensive
-experiments on our CSD dataset show that our proposed model outperforms all the
-baseline models that do not make use of contextual information. Specifically,
-it improves the F1 score by 10.3% compared with the state-of-the-art method in
-the SemEval-2016 Task 6 competition. This shows the potential of incorporating
-rich contextual information on detecting target-specific stances on social
-media platforms and implies a more practical way to construct future stance
-detection tasks.
+<span><p>Machine learning and deep learning-based decision making has become part of
+today's software. The goal of this work is to ensure that machine learning and
+deep learning-based systems are as trusted as traditional software. Traditional
+software is made dependable by following rigorous practice like static
+analysis, testing, debugging, verifying, and repairing throughout the
+development and maintenance life-cycle. Similarly for machine learning systems,
+we need to keep these models up to date so that their performance is not
+compromised. For this, current systems rely on scheduled re-training of these
+models as new data kicks in. In this work, we propose to measure the data drift
+that takes place when new data kicks in so that one can adaptively re-train the
+models whenever re-training is actually required irrespective of schedules. In
+addition to that, we generate various explanations at sentence level and
+dataset level to capture why a given payload text has drifted.
 </p></span>
 </div>
 </a>
@@ -684,17 +679,28 @@ detection tasks.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">MAIL: Malware Analysis Intermediate Language. (arXiv:2211.03068v1 [cs.CR])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03068">
+<summary class="article-expander__title">Bridging Fairness and Environmental Sustainability in Natural Language Processing. (arXiv:2211.04256v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04256">
 <div class="article-summary-box-inner">
-<span><p>This paper introduces and presents a new language named MAIL (Malware
-Analysis Intermediate Language). MAIL is basically used for building malware
-analysis and detection tools. MAIL provides an abstract representation of an
-assembly program and hence the ability of a tool to automate malware analysis
-and detection. By translating binaries compiled for different platforms to
-MAIL, a tool can achieve platform independence. Each MAIL statement is
-annotated with patterns that can be used by a tool to optimize malware analysis
-and detection.
+<span><p>Fairness and environmental impact are important research directions for the
+sustainable development of artificial intelligence. However, while each topic
+is an active research area in natural language processing (NLP), there is a
+surprising lack of research on the interplay between the two fields. This
+lacuna is highly problematic, since there is increasing evidence that an
+exclusive focus on fairness can actually hinder environmental sustainability,
+and vice versa. In this work, we shed light on this crucial intersection in NLP
+by (1) investigating the efficiency of current fairness approaches through
+surveying example methods for reducing unfair stereotypical bias from the
+literature, and (2) evaluating a common technique to reduce energy consumption
+(and thus environmental impact) of English NLP models, knowledge distillation
+(KD), for its impact on fairness. In this case study, we evaluate the effect of
+important KD factors, including layer and dimensionality reduction, with
+respect to: (a) performance on the distillation task (natural language
+inference and semantic similarity prediction), and (b) multiple measures and
+dimensions of stereotypical bias (e.g., gender bias measured via the Word
+Embedding Association Test). Our results lead us to clarify current assumptions
+regarding the effect of KD on unfair bias: contrary to other findings, we show
+that KD can actually decrease model fairness.
 </p></span>
 </div>
 </a>
@@ -702,20 +708,29 @@ and detection.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Noisy Channel for Automatic Text Simplification. (arXiv:2211.03152v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03152">
+<summary class="article-expander__title">SocioProbe: What, When, and Where Language Models Learn about Sociodemographics. (arXiv:2211.04281v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04281">
 <div class="article-summary-box-inner">
-<span><p>In this paper we present a simple re-ranking method for Automatic Sentence
-Simplification based on the noisy channel scheme. Instead of directly computing
-the best simplification given a complex text, the re-ranking method also
-considers the probability of the simple sentence to produce the complex
-counterpart, as well as the probability of the simple text itself, according to
-a language model. Our experiments show that combining these scores outperform
-the original system in three different English datasets, yielding the best
-known result in one of them. Adopting the noisy channel scheme opens new ways
-to infuse additional information into ATS systems, and thus to control
-important aspects of them, a known limitation of end-to-end neural seq2seq
-generative models.
+<span><p>Pre-trained language models (PLMs) have outperformed other NLP models on a
+wide range of tasks. Opting for a more thorough understanding of their
+capabilities and inner workings, researchers have established the extend to
+which they capture lower-level knowledge like grammaticality, and mid-level
+semantic knowledge like factual understanding. However, there is still little
+understanding of their knowledge of higher-level aspects of language. In
+particular, despite the importance of sociodemographic aspects in shaping our
+language, the questions of whether, where, and how PLMs encode these aspects,
+e.g., gender or age, is still unexplored. We address this research gap by
+probing the sociodemographic knowledge of different single-GPU PLMs on multiple
+English data sets via traditional classifier probing and information-theoretic
+minimum description length probing. Our results show that PLMs do encode these
+sociodemographics, and that this knowledge is sometimes spread across the
+layers of some of the tested PLMs. We further conduct a multilingual analysis
+and investigate the effect of supplementary training to further explore to what
+extent, where, and with what amount of pre-training data the knowledge is
+encoded. Our overall results indicate that sociodemographic knowledge is still
+a major challenge for NLP. PLMs require large amounts of pre-training data to
+acquire the knowledge and models that excel in general language understanding
+do not seem to own more knowledge about these aspects.
 </p></span>
 </div>
 </a>
@@ -723,27 +738,23 @@ generative models.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">On the Domain Adaptation and Generalization of Pretrained Language Models: A Survey. (arXiv:2211.03154v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03154">
+<summary class="article-expander__title">BER: Balanced Error Rate For Speaker Diarization. (arXiv:2211.04304v1 [cs.SD])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04304">
 <div class="article-summary-box-inner">
-<span><p>Recent advances in NLP are brought by a range of large-scale pretrained
-language models (PLMs). These PLMs have brought significant performance gains
-for a range of NLP tasks, circumventing the need to customize complex designs
-for specific tasks. However, most current work focus on finetuning PLMs on a
-domain-specific datasets, ignoring the fact that the domain gap can lead to
-overfitting and even performance drop. Therefore, it is practically important
-to find an appropriate method to effectively adapt PLMs to a target domain of
-interest. Recently, a range of methods have been proposed to achieve this
-purpose. Early surveys on domain adaptation are not suitable for PLMs due to
-the sophisticated behavior exhibited by PLMs from traditional models trained
-from scratch and that domain adaptation of PLMs need to be redesigned to take
-effect. This paper aims to provide a survey on these newly proposed methods and
-shed light in how to apply traditional machine learning methods to newly
-evolved and future technologies. By examining the issues of deploying PLMs for
-downstream tasks, we propose a taxonomy of domain adaptation approaches from a
-machine learning system view, covering methods for input augmentation, model
-optimization and personalization. We discuss and compare those methods and
-suggest promising future research directions.
+<span><p>DER is the primary metric to evaluate diarization performance while facing a
+dilemma: the errors in short utterances or segments tend to be overwhelmed by
+longer ones. Short segments, e.g., `yes' or `no,' still have semantic
+information. Besides, DER overlooks errors in less-talked speakers. Although
+JER balances speaker errors, it still suffers from the same dilemma.
+Considering all those aspects, duration error, segment error, and
+speaker-weighted error constituting a complete diarization evaluation, we
+propose a Balanced Error Rate (BER) to evaluate speaker diarization. First, we
+propose a segment-level error rate (SER) via connected sub-graphs and adaptive
+IoU threshold to get accurate segment matching. Second, to evaluate diarization
+in a unified way, we adopt a speaker-specific harmonic mean between duration
+and segment, followed by a speaker-weighted average. Third, we analyze our
+metric via the modularized system, EEND, and the multi-modal method on real
+datasets. SER and BER are publicly available at https://github.com/X-LANCE/BER.
 </p></span>
 </div>
 </a>
@@ -751,25 +762,21 @@ suggest promising future research directions.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Deliberation Networks and How to Train Them. (arXiv:2211.03217v1 [cs.CL])</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.03217">
+<summary class="article-expander__title">Will we run out of data? An analysis of the limits of scaling datasets in Machine Learning. (arXiv:2211.04325v1 [cs.LG])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04325">
 <div class="article-summary-box-inner">
-<span><p>Deliberation networks are a family of sequence-to-sequence models, which have
-achieved state-of-the-art performance in a wide range of tasks such as machine
-translation and speech synthesis. A deliberation network consists of multiple
-standard sequence-to-sequence models, each one conditioned on the initial input
-and the output of the previous model. During training, there are several key
-questions: whether to apply Monte Carlo approximation to the gradients or the
-loss, whether to train the standard models jointly or separately, whether to
-run an intermediate model in teacher forcing or free running mode, whether to
-apply task-specific techniques. Previous work on deliberation networks
-typically explores one or two training options for a specific task. This work
-introduces a unifying framework, covering various training options, and
-addresses the above questions. In general, it is simpler to approximate the
-gradients. When parallel training is essential, separate training should be
-adopted. Regardless of the task, the intermediate model should be in free
-running mode. For tasks where the output is continuous, a guided attention loss
-can be used to prevent degradation into a standard model.
+<span><p>We analyze the growth of dataset sizes used in machine learning for natural
+language processing and computer vision, and extrapolate these using two
+methods; using the historical growth rate and estimating the compute-optimal
+dataset size for future predicted compute budgets. We investigate the growth in
+data usage by estimating the total stock of unlabeled data available on the
+internet over the coming decades. Our analysis indicates that the stock of
+high-quality language data will be exhausted soon; likely before 2026. By
+contrast, the stock of low-quality language data and image data will be
+exhausted only much later; between 2030 and 2050 (for low-quality language) and
+between 2030 and 2060 (for images). Our work suggests that the current trend of
+ever-growing ML models that rely on enormous datasets might slow down if data
+efficiency is not drastically improved or new sources of data become available.
 </p></span>
 </div>
 </a>
@@ -777,16 +784,20 @@ can be used to prevent degradation into a standard model.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">MyProfessors: Mining Turkish Student Reviews. (arXiv:2109.02325v3 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2109.02325">
+<summary class="article-expander__title">Prompt-Based Metric Learning for Few-Shot NER. (arXiv:2211.04337v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04337">
 <div class="article-summary-box-inner">
-<span><p>We introduce Hocalarim (MyProfessors), the largest student review dataset
-available for the Turkish language. It consists of over 5000 professor reviews
-left online by students, with different aspects of education rated on a scale
-of 1 to 5 stars. We investigate the properties of the dataset and present its
-statistics. We examine the impact of students' institution type on their
-ratings and the correlation of students' bias to give positive or negative
-feedback.
+<span><p>Few-shot named entity recognition (NER) targets generalizing to unseen labels
+and/or domains with few labeled examples. Existing metric learning methods
+compute token-level similarities between query and support sets, but are not
+able to fully incorporate label semantics into modeling. To address this issue,
+we propose a simple method to largely improve metric learning for NER: 1)
+multiple prompt schemas are designed to enhance label semantics; 2) we propose
+a novel architecture to effectively combine multiple prompt-based
+representations. Empirically, our method achieves new state-of-the-art (SOTA)
+results under 16 of the 18 considered settings, substantially outperforming the
+previous SOTA by an average of 8.84% and a maximum of 34.51% in relative gains
+of micro F1. Our code is available at https://github.com/AChen-qaq/ProML.
 </p></span>
 </div>
 </a>
@@ -794,22 +805,25 @@ feedback.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">DISAPERE: A Dataset for Discourse Structure in Peer Review Discussions. (arXiv:2110.08520v2 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2110.08520">
+<summary class="article-expander__title">NaturalAdversaries: Can Naturalistic Adversaries Be as Effective as Artificial Adversaries?. (arXiv:2211.04364v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04364">
 <div class="article-summary-box-inner">
-<span><p>At the foundation of scientific evaluation is the labor-intensive process of
-peer review. This critical task requires participants to consume vast amounts
-of highly technical text. Prior work has annotated different aspects of review
-argumentation, but discourse relations between reviews and rebuttals have yet
-to be examined. We present DISAPERE, a labeled dataset of 20k sentences
-contained in 506 review-rebuttal pairs in English, annotated by experts.
-DISAPERE synthesizes label sets from prior work and extends them to include
-fine-grained annotation of the rebuttal sentences, characterizing their context
-in the review and the authors' stance towards review arguments. Further, we
-annotate every review and rebuttal sentence. We show that discourse cues from
-rebuttals can shed light on the quality and interpretation of reviews. Further,
-an understanding of the argumentative strategies employed by the reviewers and
-authors provides useful signal for area chairs and other decision makers.
+<span><p>While a substantial body of prior work has explored adversarial example
+generation for natural language understanding tasks, these examples are often
+unrealistic and diverge from the real-world data distributions. In this work,
+we introduce a two-stage adversarial example generation framework
+(NaturalAdversaries), for designing adversaries that are effective at fooling a
+given classifier and demonstrate natural-looking failure cases that could
+plausibly occur during in-the-wild deployment of the models.
+</p>
+<p>At the first stage a token attribution method is used to summarize a given
+classifier's behaviour as a function of the key tokens in the input. In the
+second stage a generative model is conditioned on the key tokens from the first
+stage. NaturalAdversaries is adaptable to both black-box and white-box
+adversarial attacks based on the level of access to the model parameters. Our
+results indicate these adversaries generalize across domains, and offer
+insights for future research on improving robustness of neural text
+classification models.
 </p></span>
 </div>
 </a>
@@ -817,27 +831,29 @@ authors provides useful signal for area chairs and other decision makers.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Semantic Segmentation of Legal Documents via Rhetorical Roles. (arXiv:2112.01836v2 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2112.01836">
+<summary class="article-expander__title">A Multimodal Approach for Dementia Detection from Spontaneous Speech with Tensor Fusion Layer. (arXiv:2211.04368v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04368">
 <div class="article-summary-box-inner">
-<span><p>Legal documents are unstructured, use legal jargon, and have considerable
-length, making them difficult to process automatically via conventional text
-processing techniques. A legal document processing system would benefit
-substantially if the documents could be segmented into coherent information
-units. This paper proposes a new corpus of legal documents annotated (with the
-help of legal experts) with a set of 13 semantically coherent units labels
-(referred to as Rhetorical Roles), e.g., facts, arguments, statute, issue,
-precedent, ruling, and ratio. We perform a thorough analysis of the corpus and
-the annotations. For automatically segmenting the legal documents, we
-experiment with the task of rhetorical role prediction: given a document,
-predict the text segments corresponding to various roles. Using the created
-corpus, we experiment extensively with various deep learning-based baseline
-models for the task. Further, we develop a multitask learning (MTL) based deep
-model with document rhetorical role label shift as an auxiliary task for
-segmenting a legal document. The proposed model shows superior performance over
-the existing models. We also experiment with model performance in the case of
-domain transfer and model distillation techniques to see the model performance
-in limited data conditions.
+<span><p>Alzheimer's disease (AD) is a progressive neurological disorder, meaning that
+the symptoms develop gradually throughout the years. It is also the main cause
+of dementia, which affects memory, thinking skills, and mental abilities.
+Nowadays, researchers have moved their interest towards AD detection from
+spontaneous speech, since it constitutes a time-effective procedure. However,
+existing state-of-the-art works proposing multimodal approaches do not take
+into consideration the inter- and intra-modal interactions and propose early
+and late fusion approaches. To tackle these limitations, we propose deep neural
+networks, which can be trained in an end-to-end trainable way and capture the
+inter- and intra-modal interactions. Firstly, each audio file is converted to
+an image consisting of three channels, i.e., log-Mel spectrogram, delta, and
+delta-delta. Next, each transcript is passed through a BERT model followed by a
+gated self-attention layer. Similarly, each image is passed through a Swin
+Transformer followed by an independent gated self-attention layer. Acoustic
+features are extracted also from each audio file. Finally, the representation
+vectors from the different modalities are fed to a tensor fusion layer for
+capturing the inter-modal interactions. Extensive experiments conducted on the
+ADReSS Challenge dataset indicate that our introduced approaches obtain
+valuable advantages over existing research initiatives reaching Accuracy and
+F1-score up to 86.25% and 85.48% respectively.
 </p></span>
 </div>
 </a>
@@ -845,21 +861,18 @@ in limited data conditions.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Shapes of Emotions: Multimodal Emotion Recognition in Conversations via Emotion Shifts. (arXiv:2112.01938v2 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2112.01938">
+<summary class="article-expander__title">nBIIG: A Neural BI Insights Generation System for Table Reporting. (arXiv:2211.04417v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04417">
 <div class="article-summary-box-inner">
-<span><p>Emotion Recognition in Conversations (ERC) is an important and active
-research area. Recent work has shown the benefits of using multiple modalities
-(e.g., text, audio, and video) for the ERC task. In a conversation,
-participants tend to maintain a particular emotional state unless some stimuli
-evokes a change. There is a continuous ebb and flow of emotions in a
-conversation. Inspired by this observation, we propose a multimodal ERC model
-and augment it with an emotion-shift component that improves performance. The
-proposed emotion-shift component is modular and can be added to any existing
-multimodal ERC model (with a few modifications). We experiment with different
-variants of the model, and results show that the inclusion of emotion shift
-signal helps the model to outperform existing models for ERC on MOSEI and
-IEMOCAP datasets.
+<span><p>We present nBIIG, a neural Business Intelligence (BI) Insights Generation
+system. Given a table, our system applies various analyses to create
+corresponding RDF representations, and then uses a neural model to generate
+fluent textual insights out of these representations. The generated insights
+can be used by an analyst, via a human-in-the-loop paradigm, to enhance the
+task of creating compelling table reports. The underlying generative neural
+model is trained over large and carefully distilled data, curated from multiple
+BI domains. Thus, the system can generate faithful and fluent insights over
+open-domain tables, making it practical and useful.
 </p></span>
 </div>
 </a>
@@ -867,21 +880,24 @@ IEMOCAP datasets.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Simple Questions Generate Named Entity Recognition Datasets. (arXiv:2112.08808v4 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2112.08808">
+<summary class="article-expander__title">Word Order Matters when you Increase Masking. (arXiv:2211.04427v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04427">
 <div class="article-summary-box-inner">
-<span><p>Recent named entity recognition (NER) models often rely on human-annotated
-datasets, requiring the significant engagement of professional knowledge on the
-target domain and entities. This research introduces an ask-to-generate
-approach that automatically generates NER datasets by asking questions in
-simple natural language to an open-domain question answering system (e.g.,
-"Which disease?"). Despite using fewer in-domain resources, our models, solely
-trained on the generated datasets, largely outperform strong low-resource
-models by an average F1 score of 19.4 for six popular NER benchmarks.
-Furthermore, our models provide competitive performance with rich-resource
-models that additionally leverage in-domain dictionaries provided by domain
-experts. In few-shot NER, we outperform the previous best model by an F1 score
-of 5.2 on three benchmarks and achieve new state-of-the-art performance.
+<span><p>Word order, an essential property of natural languages, is injected in
+Transformer-based neural language models using position encoding. However,
+recent experiments have shown that explicit position encoding is not always
+useful, since some models without such feature managed to achieve state-of-the
+art performance on some tasks. To understand better this phenomenon, we examine
+the effect of removing position encodings on the pre-training objective itself
+(i.e., masked language modelling), to test whether models can reconstruct
+position information from co-occurrences alone. We do so by controlling the
+amount of masked tokens in the input sentence, as a proxy to affect the
+importance of position information for the task. We find that the necessity of
+position information increases with the amount of masking, and that masked
+language models without position encodings are not able to reconstruct this
+information on the task. These findings point towards a direct relationship
+between the amount of masking and the ability of Transformers to capture
+order-sensitive aspects of language using position encoding.
 </p></span>
 </div>
 </a>
@@ -889,29 +905,21 @@ of 5.2 on three benchmarks and achieve new state-of-the-art performance.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Knowledge Matters: Radiology Report Generation with General and Specific Knowledge. (arXiv:2112.15009v2 [eess.IV] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2112.15009">
+<summary class="article-expander__title">Review of coreference resolution in English and Persian. (arXiv:2211.04428v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04428">
 <div class="article-summary-box-inner">
-<span><p>Automatic radiology report generation is critical in clinics which can
-relieve experienced radiologists from the heavy workload and remind
-inexperienced radiologists of misdiagnosis or missed diagnose. Existing
-approaches mainly formulate radiology report generation as an image captioning
-task and adopt the encoder-decoder framework. However, in the medical domain,
-such pure data-driven approaches suffer from the following problems: 1) visual
-and textual bias problem; 2) lack of expert knowledge. In this paper, we
-propose a knowledge-enhanced radiology report generation approach introduces
-two types of medical knowledge: 1) General knowledge, which is input
-independent and provides the broad knowledge for report generation; 2) Specific
-knowledge, which is input dependent and provides the fine-grained knowledge for
-report generation. To fully utilize both the general and specific knowledge, we
-also propose a knowledge-enhanced multi-head attention mechanism. By merging
-the visual features of the radiology image with general knowledge and specific
-knowledge, the proposed model can improve the quality of generated reports.
-Experimental results on two publicly available datasets IU-Xray and MIMIC-CXR
-show that the proposed knowledge enhanced approach outperforms state-of-the-art
-image captioning based methods. Ablation studies also demonstrate that both
-general and specific knowledge can help to improve the performance of radiology
-report generation.
+<span><p>Coreference resolution (CR) is one of the most challenging areas of natural
+language processing. This task seeks to identify all textual references to the
+same real-world entity. Research in this field is divided into coreference
+resolution and anaphora resolution. Due to its application in textual
+comprehension and its utility in other tasks such as information extraction
+systems, document summarization, and machine translation, this field has
+attracted considerable interest. Consequently, it has a significant effect on
+the quality of these systems. This article reviews the existing corpora and
+evaluation metrics in this field. Then, an overview of the coreference
+algorithms, from rule-based methods to the latest deep learning techniques, is
+provided. Finally, coreference resolution and pronoun resolution systems in
+Persian are investigated.
 </p></span>
 </div>
 </a>
@@ -919,28 +927,20 @@ report generation.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Survey of Hallucination in Natural Language Generation. (arXiv:2202.03629v5 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2202.03629">
+<summary class="article-expander__title">SLATE: A Sequence Labeling Approach for Task Extraction from Free-form Inked Content. (arXiv:2211.04454v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04454">
 <div class="article-summary-box-inner">
-<span><p>Natural Language Generation (NLG) has improved exponentially in recent years
-thanks to the development of sequence-to-sequence deep learning technologies
-such as Transformer-based language models. This advancement has led to more
-fluent and coherent NLG, leading to improved development in downstream tasks
-such as abstractive summarization, dialogue generation and data-to-text
-generation. However, it is also apparent that deep learning based generation is
-prone to hallucinate unintended text, which degrades the system performance and
-fails to meet user expectations in many real-world scenarios. To address this
-issue, many studies have been presented in measuring and mitigating
-hallucinated texts, but these have never been reviewed in a comprehensive
-manner before. In this survey, we thus provide a broad overview of the research
-progress and challenges in the hallucination problem in NLG. The survey is
-organized into two parts: (1) a general overview of metrics, mitigation
-methods, and future directions; and (2) an overview of task-specific research
-progress on hallucinations in the following downstream tasks, namely
-abstractive summarization, dialogue generation, generative question answering,
-data-to-text generation, machine translation, and visual-language generation.
-This survey serves to facilitate collaborative efforts among researchers in
-tackling the challenge of hallucinated texts in NLG.
+<span><p>We present SLATE, a sequence labeling approach for extracting tasks from
+free-form content such as digitally handwritten (or "inked") notes on a virtual
+whiteboard. Our approach allows us to create a single, low-latency model to
+simultaneously perform sentence segmentation and classification of these
+sentences into task/non-task sentences. SLATE greatly outperforms a baseline
+two-model (sentence segmentation followed by classification model) approach,
+achieving a task F1 score of 84.4\%, a sentence segmentation (boundary
+similarity) score of 88.4% and three times lower latency compared to the
+baseline. Furthermore, we provide insights into tackling challenges of
+performing NLP on the inking domain. We release both our code and dataset for
+this novel task.
 </p></span>
 </div>
 </a>
@@ -948,28 +948,17 @@ tackling the challenge of hallucinated texts in NLG.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">A Survey on Aspect-Based Sentiment Analysis: Tasks, Methods, and Challenges. (arXiv:2203.01054v2 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2203.01054">
+<summary class="article-expander__title">Hyperbolic Centroid Calculations for Text Classification. (arXiv:2211.04462v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.04462">
 <div class="article-summary-box-inner">
-<span><p>As an important fine-grained sentiment analysis problem, aspect-based
-sentiment analysis (ABSA), aiming to analyze and understand people's opinions
-at the aspect level, has been attracting considerable interest in the last
-decade. To handle ABSA in different scenarios, various tasks are introduced for
-analyzing different sentiment elements and their relations, including the
-aspect term, aspect category, opinion term, and sentiment polarity. Unlike
-early ABSA works focusing on a single sentiment element, many compound ABSA
-tasks involving multiple elements have been studied in recent years for
-capturing more complete aspect-level sentiment information. However, a
-systematic review of various ABSA tasks and their corresponding solutions is
-still lacking, which we aim to fill in this survey. More specifically, we
-provide a new taxonomy for ABSA which organizes existing studies from the axes
-of concerned sentiment elements, with an emphasis on recent advances of
-compound ABSA tasks. From the perspective of solutions, we summarize the
-utilization of pre-trained language models for ABSA, which improved the
-performance of ABSA to a new stage. Besides, techniques for building more
-practical ABSA systems in cross-domain/lingual scenarios are discussed.
-Finally, we review some emerging topics and discuss some open challenges to
-outlook potential future directions of ABSA.
+<span><p>A new development in NLP is the construction of hyperbolic word embeddings.
+As opposed to their Euclidean counterparts, hyperbolic embeddings are
+represented not by vectors, but by points in hyperbolic space. This makes the
+most common basic scheme for constructing document representations, namely the
+averaging of word vectors, meaningless in the hyperbolic setting. We
+reinterpret the vector mean as the centroid of the points represented by the
+vectors, and investigate various hyperbolic centroid schemes and their
+effectiveness at text classification.
 </p></span>
 </div>
 </a>
@@ -977,28 +966,21 @@ outlook potential future directions of ABSA.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Thinking about GPT-3 In-Context Learning for Biomedical IE? Think Again. (arXiv:2203.08410v3 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2203.08410">
+<summary class="article-expander__title">UA-GEC: Grammatical Error Correction and Fluency Corpus for the Ukrainian Language. (arXiv:2103.16997v2 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2103.16997">
 <div class="article-summary-box-inner">
-<span><p>The strong few-shot in-context learning capability of large pre-trained
-language models (PLMs) such as GPT-3 is highly appealing for application
-domains such as biomedicine, which feature high and diverse demands of language
-technologies but also high data annotation costs. In this paper, we present the
-first systematic and comprehensive study to compare the few-shot performance of
-GPT-3 in-context learning with fine-tuning smaller (i.e., BERT-sized) PLMs on
-two highly representative biomedical information extraction tasks, named entity
-recognition and relation extraction. We follow the true few-shot setting to
-avoid overestimating models' few-shot performance by model selection over a
-large validation set. We also optimize GPT-3's performance with known
-techniques such as contextual calibration and dynamic in-context example
-retrieval. However, our results show that GPT-3 still significantly
-underperforms compared to simply fine-tuning a smaller PLM. In addition, GPT-3
-in-context learning also yields smaller gains in accuracy when more training
-data becomes available. Our in-depth analyses further reveal issues of the
-in-context learning setting that may be detrimental to information extraction
-tasks in general. Given the high cost of experimenting with GPT-3, we hope our
-study provides guidance for biomedical researchers and practitioners towards
-more promising directions such as fine-tuning small PLMs.
+<span><p>We present a corpus professionally annotated for grammatical error correction
+(GEC) and fluency edits in the Ukrainian language. To the best of our
+knowledge, this is the first GEC corpus for the Ukrainian language. We
+collected texts with errors (20,715 sentences) from a diverse pool of
+contributors, including both native and non-native speakers. The data cover a
+wide variety of writing domains, from text chats and essays to formal writing.
+Professional proofreaders corrected and annotated the corpus for errors
+relating to fluency, grammar, punctuation, and spelling. This corpus can be
+used for developing and evaluating GEC systems in Ukrainian. More generally, it
+can be used for researching multilingual and low-resource NLP, morphologically
+rich languages, document-level GEC, and fluency correction. The corpus is
+publicly available at https://github.com/grammarly/ua-gec
 </p></span>
 </div>
 </a>
@@ -1006,23 +988,27 @@ more promising directions such as fine-tuning small PLMs.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Nix-TTS: Lightweight and End-to-End Text-to-Speech via Module-wise Distillation. (arXiv:2203.15643v2 [cs.SD] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2203.15643">
+<summary class="article-expander__title">Scientia Potentia Est -- On the Role of Knowledge in Computational Argumentation. (arXiv:2107.00281v3 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2107.00281">
 <div class="article-summary-box-inner">
-<span><p>Several solutions for lightweight TTS have shown promising results. Still,
-they either rely on a hand-crafted design that reaches non-optimum size or use
-a neural architecture search but often suffer training costs. We present
-Nix-TTS, a lightweight TTS achieved via knowledge distillation to a
-high-quality yet large-sized, non-autoregressive, and end-to-end (vocoder-free)
-TTS teacher model. Specifically, we offer module-wise distillation, enabling
-flexible and independent distillation to the encoder and decoder module. The
-resulting Nix-TTS inherited the advantageous properties of being
-non-autoregressive and end-to-end from the teacher, yet significantly smaller
-in size, with only 5.23M parameters or up to 89.34% reduction of the teacher
-model; it also achieves over 3.04x and 8.36x inference speedup on Intel-i7 CPU
-and Raspberry Pi 3B respectively and still retains a fair voice naturalness and
-intelligibility compared to the teacher model. We provide pretrained models and
-audio samples of Nix-TTS.
+<span><p>Despite extensive research efforts in recent years, computational
+argumentation (CA) remains one of the most challenging areas of natural
+language processing. The reason for this is the inherent complexity of the
+cognitive processes behind human argumentation, which integrate a plethora of
+different types of knowledge, ranging from topic-specific facts and common
+sense to rhetorical knowledge. The integration of knowledge from such a wide
+range in CA requires modeling capabilities far beyond many other natural
+language understanding tasks. Existing research on mining, assessing, reasoning
+over, and generating arguments largely acknowledges that much more knowledge is
+needed to accurately model argumentation computationally. However, a systematic
+overview of the types of knowledge introduced in existing CA models is missing,
+hindering targeted progress in the field. Adopting the operational definition
+of knowledge as any task-relevant normative information not provided as input,
+the survey paper at hand fills this gap by (1) proposing a taxonomy of types of
+knowledge required in CA tasks, (2) systematizing the large body of CA work
+according to the reliance on and exploitation of these knowledge types for the
+four main research areas in CA, and (3) outlining and discussing directions for
+future research efforts in CA.
 </p></span>
 </div>
 </a>
@@ -1030,27 +1016,28 @@ audio samples of Nix-TTS.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">KOLD: Korean Offensive Language Dataset. (arXiv:2205.11315v2 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2205.11315">
+<summary class="article-expander__title">How Optimal is Greedy Decoding for Extractive Question Answering?. (arXiv:2108.05857v2 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2108.05857">
 <div class="article-summary-box-inner">
-<span><p>Recent directions for offensive language detection are hierarchical modeling,
-identifying the type and the target of offensive language, and interpretability
-with offensive span annotation and prediction. These improvements are focused
-on English and do not transfer well to other languages because of cultural and
-linguistic differences. In this paper, we present the Korean Offensive Language
-Dataset (KOLD) comprising 40,429 comments, which are annotated hierarchically
-with the type and the target of offensive language, accompanied by annotations
-of the corresponding text spans. We collect the comments from NAVER news and
-YouTube platform and provide the titles of the articles and videos as the
-context information for the annotation process. We use these annotated comments
-as training data for Korean BERT and RoBERTa models and find that they are
-effective at offensiveness detection, target classification, and target span
-detection while having room for improvement for target group classification and
-offensive span detection. We discover that the target group distribution
-differs drastically from the existing English datasets, and observe that
-providing the context information improves the model performance in
-offensiveness detection (+0.3), target classification (+1.5), and target group
-classification (+13.1). We publicly release the dataset and baseline models.
+<span><p>Fine-tuned language models use greedy decoding to answer reading
+comprehension questions with relative success. However, this approach does not
+ensure that the answer is a span in the given passage, nor does it guarantee
+that it is the most probable one. Does greedy decoding actually perform worse
+than an algorithm that does adhere to these properties? To study the
+performance and optimality of greedy decoding, we present exact-extract, a
+decoding algorithm that efficiently finds the most probable answer span in the
+context. We compare the performance of T5 with both decoding algorithms on
+zero-shot and few-shot extractive question answering. When no training examples
+are available, exact-extract significantly outperforms greedy decoding.
+However, greedy decoding quickly converges towards the performance of
+exact-extract with the introduction of a few training examples, becoming more
+extractive and increasingly likelier to generate the most probable span as the
+training set grows. We also show that self-supervised training can bias the
+model towards extractive behavior, increasing performance in the zero-shot
+setting without resorting to annotated examples. Overall, our results suggest
+that pretrained language models are so good at adapting to extractive question
+answering, that it is often enough to fine-tune on a small training set for the
+greedy algorithm to emulate the optimal decoding strategy.
 </p></span>
 </div>
 </a>
@@ -1058,28 +1045,28 @@ classification (+13.1). We publicly release the dataset and baseline models.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Utilizing Language-Image Pretraining for Efficient and Robust Bilingual Word Alignment. (arXiv:2205.11616v2 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2205.11616">
+<summary class="article-expander__title">Complex Knowledge Base Question Answering: A Survey. (arXiv:2108.06688v5 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2108.06688">
 <div class="article-summary-box-inner">
-<span><p>Word translation without parallel corpora has become feasible, rivaling the
-performance of supervised methods. Recent findings have shown that the accuracy
-and robustness of unsupervised word translation (UWT) can be improved by making
-use of visual observations, which are universal representations across
-languages. In this work, we investigate the potential of using not only visual
-observations but also pretrained language-image models for enabling a more
-efficient and robust UWT. Specifically, we develop a novel UWT method dubbed
-Word Alignment using Language-Image Pretraining (WALIP), which leverages visual
-observations via the shared embedding space of images and texts provided by
-CLIP models (Radford et al., 2021). WALIP has a two-step procedure. First, we
-retrieve word pairs with high confidences of similarity, computed using our
-proposed image-based fingerprints, which define the initial pivot for the word
-alignment. Second, we apply our robust Procrustes algorithm to estimate the
-linear mapping between two embedding spaces, which iteratively corrects and
-refines the estimated alignment. Our extensive experiments show that WALIP
-improves upon the state-of-the-art performance of bilingual word alignment for
-a few language pairs across different word embeddings and displays great
-robustness to the dissimilarity of language pairs or training corpora for two
-word embeddings.
+<span><p>Knowledge base question answering (KBQA) aims to answer a question over a
+knowledge base (KB). Early studies mainly focused on answering simple questions
+over KBs and achieved great success. However, their performance on complex
+questions is still far from satisfactory. Therefore, in recent years,
+researchers propose a large number of novel methods, which looked into the
+challenges of answering complex questions. In this survey, we review recent
+advances on KBQA with the focus on solving complex questions, which usually
+contain multiple subjects, express compound relations, or involve numerical
+operations. In detail, we begin with introducing the complex KBQA task and
+relevant background. Then, we describe benchmark datasets for complex KBQA task
+and introduce the construction process of these datasets. Next, we present two
+mainstream categories of methods for complex KBQA, namely semantic
+parsing-based (SP-based) methods and information retrieval-based (IR-based)
+methods. Specifically, we illustrate their procedures with flow designs and
+discuss their major differences and similarities. After that, we summarize the
+challenges that these two categories of methods encounter when answering
+complex questions, and explicate advanced solutions and techniques used in
+existing work. Finally, we conclude and discuss several promising directions
+related to complex KBQA for future research.
 </p></span>
 </div>
 </a>
@@ -1087,20 +1074,22 @@ word embeddings.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Towards Opening the Black Box of Neural Machine Translation: Source and Target Interpretations of the Transformer. (arXiv:2205.11631v2 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2205.11631">
+<summary class="article-expander__title">LexGLUE: A Benchmark Dataset for Legal Language Understanding in English. (arXiv:2110.00976v4 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2110.00976">
 <div class="article-summary-box-inner">
-<span><p>In Neural Machine Translation (NMT), each token prediction is conditioned on
-the source sentence and the target prefix (what has been previously translated
-at a decoding step). However, previous work on interpretability in NMT has
-mainly focused solely on source sentence tokens' attributions. Therefore, we
-lack a full understanding of the influences of every input token (source
-sentence and target prefix) in the model predictions. In this work, we propose
-an interpretability method that tracks input tokens' attributions for both
-contexts. Our method, which can be extended to any encoder-decoder
-Transformer-based model, allows us to better comprehend the inner workings of
-current NMT models. We apply the proposed method to both bilingual and
-multilingual Transformers and present insights into their behaviour.
+<span><p>Laws and their interpretations, legal arguments and agreements\ are typically
+expressed in writing, leading to the production of vast corpora of legal text.
+Their analysis, which is at the center of legal practice, becomes increasingly
+elaborate as these collections grow in size. Natural language understanding
+(NLU) technologies can be a valuable tool to support legal practitioners in
+these endeavors. Their usefulness, however, largely depends on whether current
+state-of-the-art models can generalize across various tasks in the legal
+domain. To answer this currently open question, we introduce the Legal General
+Language Understanding Evaluation (LexGLUE) benchmark, a collection of datasets
+for evaluating model performance across a diverse set of legal NLU tasks in a
+standardized way. We also provide an evaluation and analysis of several generic
+and legal-oriented models demonstrating that the latter consistently offer
+performance improvements across multiple tasks.
 </p></span>
 </div>
 </a>
@@ -1108,23 +1097,18 @@ multilingual Transformers and present insights into their behaviour.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">GraphQ IR: Unifying the Semantic Parsing of Graph Query Languages with One Intermediate Representation. (arXiv:2205.12078v2 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2205.12078">
+<summary class="article-expander__title">Linear algebra with transformers. (arXiv:2112.01898v2 [cs.LG] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2112.01898">
 <div class="article-summary-box-inner">
-<span><p>Subject to the huge semantic gap between natural and formal languages, neural
-semantic parsing is typically bottlenecked by its complexity of dealing with
-both input semantics and output syntax. Recent works have proposed several
-forms of supplementary supervision but none is generalized across multiple
-formal languages. This paper proposes a unified intermediate representation
-(IR) for graph query languages, named GraphQ IR. It has a natural-language-like
-expression that bridges the semantic gap and formally defined syntax that
-maintains the graph structure. Therefore, a neural semantic parser can more
-precisely convert user queries into GraphQ IR, which can be later losslessly
-compiled into various downstream graph query languages. Extensive experiments
-on several benchmarks including KQA Pro, Overnight, GrailQA, and MetaQA-Cypher
-under standard i.i.d., out-of-distribution, and low-resource settings validate
-GraphQ IR's superiority over the previous state-of-the-arts with a maximum 11%
-accuracy improvement.
+<span><p>Transformers can learn to perform numerical computations from examples only.
+I study nine problems of linear algebra, from basic matrix operations to
+eigenvalue decomposition and inversion, and introduce and discuss four encoding
+schemes to represent real numbers. On all problems, transformers trained on
+sets of random matrices achieve high accuracies (over 90%). The models are
+robust to noise, and can generalize out of their training distribution. In
+particular, models trained to predict Laplace-distributed eigenvalues
+generalize to different classes of matrices: Wigner matrices or matrices with
+positive eigenvalues. The reverse is not true.
 </p></span>
 </div>
 </a>
@@ -1132,25 +1116,34 @@ accuracy improvement.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Chunk-based Nearest Neighbor Machine Translation. (arXiv:2205.12230v2 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2205.12230">
+<summary class="article-expander__title">Accurate detection of sepsis at ED triage using machine learning with clinical natural language processing. (arXiv:2204.07657v4 [cs.LG] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2204.07657">
 <div class="article-summary-box-inner">
-<span><p>Semi-parametric models, which augment generation with retrieval, have led to
-impressive results in language modeling and machine translation, due to their
-ability to retrieve fine-grained information from a datastore of examples. One
-of the most prominent approaches, $k$NN-MT, exhibits strong domain adaptation
-capabilities by retrieving tokens from domain-specific datastores
-\citep{khandelwal2020nearest}. However, $k$NN-MT requires an expensive
-retrieval operation for every single generated token, leading to a very low
-decoding speed (around 8 times slower than a parametric model). In this paper,
-we introduce a \textit{chunk-based} $k$NN-MT model which retrieves chunks of
-tokens from the datastore, instead of a single token. We propose several
-strategies for incorporating the retrieved chunks into the generation process,
-and for selecting the steps at which the model needs to search for neighbors in
-the datastore. Experiments on machine translation in two settings, static and
-``on-the-fly'' domain adaptation, show that the chunk-based $k$NN-MT model
-leads to significant speed-ups (up to 4 times) with only a small drop in
-translation quality.
+<span><p>Sepsis is a life-threatening condition with organ dysfunction and is a
+leading cause of death and critical illness worldwide. Accurate detection of
+sepsis during emergency department triage would allow early initiation of lab
+analysis, antibiotic administration, and other sepsis treatment protocols. The
+purpose of this study was to determine whether EHR data can be extracted and
+synthesized with the latest machine learning algorithms (KATE Sepsis) and
+clinical natural language processing to produce accurate sepsis models, and
+compare KATE Sepsis performance with existing sepsis screening protocols, such
+as SIRS and qSOFA. A machine learning model (KATE Sepsis) was developed using
+patient encounters with triage data from 16 participating hospitals. KATE
+Sepsis, SIRS, standard screening (SIRS with source of infection) and qSOFA were
+tested in three settings. Cohort-A was a retrospective analysis on medical
+records from a single Site 1. Cohort-B was a prospective analysis of Site 1.
+Cohort-C was a retrospective analysis on Site 1 with 15 additional sites.
+Across all cohorts, KATE Sepsis demonstrates an AUC of 0.94-0.963 with
+73-74.87% TPR and 3.76-7.17% FPR. Standard screening demonstrates an AUC of
+0.682-0.726 with 39.39-51.19% TPR and 2.9-6.02% FPR. The qSOFA protocol
+demonstrates an AUC of 0.544-0.56, with 10.52-13.18% TPR and 1.22-1.68% FPR.
+For severe sepsis, across all cohorts, KATE Sepsis demonstrates an AUC of
+0.935-0.972 with 70-82.26% TPR and 4.64-8.62% FPR. For septic shock, across all
+cohorts, KATE Sepsis demonstrates an AUC of 0.96-0.981 with 85.71-89.66% TPR
+and 4.85-8.8% FPR. SIRS, standard screening, and qSOFA demonstrate low AUC and
+TPR for severe sepsis and septic shock detection. KATE Sepsis provided
+substantially better sepsis detection performance in triage than commonly used
+screening protocols.
 </p></span>
 </div>
 </a>
@@ -1158,27 +1151,26 @@ translation quality.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Human Heuristics for AI-Generated Language Are Flawed. (arXiv:2206.07271v3 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2206.07271">
+<summary class="article-expander__title">Control Globally, Understand Locally: A Global-to-Local Hierarchical Graph Network for Emotional Support Conversation. (arXiv:2204.12749v2 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2204.12749">
 <div class="article-summary-box-inner">
-<span><p>Human communication is increasingly intermixed with language generated by AI.
-Across chat, email, and social media, AI systems produce smart replies,
-autocompletes, and translations. AI-generated language is often not identified
-as such but presented as language written by humans, raising concerns about
-novel forms of deception and manipulation. Here, we study how humans discern
-whether verbal self-presentations, one of the most personal and consequential
-forms of language, were generated by AI. In six experiments, participants (N =
-4,600) were unable to detect self-presentations generated by state-of-the-art
-AI language models in professional, hospitality, and dating contexts. A
-computational analysis of language features shows that human judgments of
-AI-generated language are handicapped by intuitive but flawed heuristics such
-as associating first-person pronouns, spontaneous wording, or family topics
-with human-written language. We experimentally demonstrate that these
-heuristics make human judgment of AI-generated language predictable and
-manipulable, allowing AI systems to produce language perceived as more human
-than human. We discuss solutions, such as AI accents, to reduce the deceptive
-potential of language generated by AI, limiting the subversion of human
-intuition.
+<span><p>Emotional support conversation aims at reducing the emotional distress of the
+help-seeker, which is a new and challenging task. It requires the system to
+explore the cause of help-seeker's emotional distress and understand their
+psychological intention to provide supportive responses. However, existing
+methods mainly focus on the sequential contextual information, ignoring the
+hierarchical relationships with the global cause and local psychological
+intention behind conversations, thus leads to a weak ability of emotional
+support. In this paper, we propose a Global-to-Local Hierarchical Graph Network
+to capture the multi-source information (global cause, local intentions and
+dialog history) and model hierarchical relationships between them, which
+consists of a multi-source encoder, a hierarchical graph reasoner, and a
+global-guide decoder. Furthermore, a novel training objective is designed to
+monitor semantic information of the global cause. Experimental results on the
+emotional support conversation dataset, ESConv, confirm that the proposed GLHG
+has achieved the state-of-the-art performance on the automatic and human
+evaluations. The code will be released in here
+\footnote{\small{~https://github.com/pengwei-iie/GLHG}}.
 </p></span>
 </div>
 </a>
@@ -1186,24 +1178,24 @@ intuition.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">GTrans: Grouping and Fusing Transformer Layers for Neural Machine Translation. (arXiv:2207.14467v2 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2207.14467">
+<summary class="article-expander__title">Exploiting Global and Local Hierarchies for Hierarchical Text Classification. (arXiv:2205.02613v3 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2205.02613">
 <div class="article-summary-box-inner">
-<span><p>Transformer structure, stacked by a sequence of encoder and decoder network
-layers, achieves significant development in neural machine translation.
-However, vanilla Transformer mainly exploits the top-layer representation,
-assuming the lower layers provide trivial or redundant information and thus
-ignoring the bottom-layer feature that is potentially valuable. In this work,
-we propose the Group-Transformer model (GTrans) that flexibly divides
-multi-layer representations of both encoder and decoder into different groups
-and then fuses these group features to generate target words. To corroborate
-the effectiveness of the proposed method, extensive experiments and analytic
-experiments are conducted on three bilingual translation benchmarks and two
-multilingual translation tasks, including the IWLST-14, IWLST-17, LDC, WMT-14
-and OPUS-100 benchmark. Experimental and analytical results demonstrate that
-our model outperforms its Transformer counterparts by a consistent gain.
-Furthermore, it can be successfully scaled up to 60 encoder layers and 36
-decoder layers.
+<span><p>Hierarchical text classification aims to leverage label hierarchy in
+multi-label text classification. Existing methods encode label hierarchy in a
+global view, where label hierarchy is treated as the static hierarchical
+structure containing all labels. Since global hierarchy is static and
+irrelevant to text samples, it makes these methods hard to exploit hierarchical
+information. Contrary to global hierarchy, local hierarchy as a structured
+labels hierarchy corresponding to each text sample. It is dynamic and relevant
+to text samples, which is ignored in previous methods. To exploit global and
+local hierarchies,we propose Hierarchy-guided BERT with Global and Local
+hierarchies (HBGL), which utilizes the large-scale parameters and prior
+language knowledge of BERT to model both global and local
+hierarchies.Moreover,HBGL avoids the intentional fusion of semantic and
+hierarchical modules by directly modeling semantic and hierarchical information
+with BERT.Compared with the state-of-the-art method HGCLR,our method achieves
+significant improvement on three benchmark datasets.
 </p></span>
 </div>
 </a>
@@ -1211,18 +1203,27 @@ decoder layers.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Deriving dynamical systems for language based on the Tolerance Principle. (arXiv:2209.04261v3 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2209.04261">
+<summary class="article-expander__title">The Curious Case of Control. (arXiv:2205.12113v2 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2205.12113">
 <div class="article-summary-box-inner">
-<span><p>In this research note, I derive explicit dynamical systems for language
-within an acquisition-driven framework (Niyogi \&amp; Berwick, 1997; Niyogi, 2006)
-assuming that children/learners follow the Tolerance Principle (Yang, 2016) to
-determine whether a rule is productive during the process of language
-acquisition. I consider different theoretical parameters such as population
-size (finite vs. infinite) and the number of previous generations that provide
-learners with data. Multiple simulations of the dynamics obtained here and
-applications to diacrhonic language data are in preparation, so they are not
-included in this first note.
+<span><p>Children acquiring English make systematic errors on subject control
+sentences even after they have reached near-adult competence (C. Chomsky,
+1969), possibly due to heuristics based on semantic roles (Maratsos, 1974).
+Given the advanced fluency of large generative language models, we ask whether
+model outputs are consistent with these heuristics, and to what degree
+different models are consistent with each other. We find that models can be
+categorized by behavior into three separate groups, with broad differences
+between the groups. The outputs of models in the largest group are consistent
+with positional heuristics that succeed on subject control but fail on object
+control. This result is surprising, given that object control is orders of
+magnitude more frequent in the text data used to train such models. We examine
+to what degree the models are sensitive to prompting with agent-patient
+information, finding that raising the salience of agent and patient relations
+results in significant changes in the outputs of most models. Based on this
+observation, we leverage an existing dataset of semantic proto-role annotations
+(White, et al. 2020) to explore the connections between control and labeling
+event participants with properties typically associated with agents and
+patients.
 </p></span>
 </div>
 </a>
@@ -1230,23 +1231,26 @@ included in this first note.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">The (In)Effectiveness of Intermediate Task Training For Domain Adaptation and Cross-Lingual Transfer Learning. (arXiv:2210.01091v2 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2210.01091">
+<summary class="article-expander__title">When More Data Hurts: A Troubling Quirk in Developing Broad-Coverage Natural Language Understanding Systems. (arXiv:2205.12228v2 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2205.12228">
 <div class="article-summary-box-inner">
-<span><p>Transfer learning from large language models (LLMs) has emerged as a powerful
-technique to enable knowledge-based fine-tuning for a number of tasks,
-adaptation of models for different domains and even languages. However, it
-remains an open question, if and when transfer learning will work, i.e. leading
-to positive or negative transfer. In this paper, we analyze the knowledge
-transfer across three natural language processing (NLP) tasks - text
-classification, sentimental analysis, and sentence similarity, using three LLMs
-- BERT, RoBERTa, and XLNet - and analyzing their performance, by fine-tuning on
-target datasets for domain and cross-lingual adaptation tasks, with and without
-an intermediate task training on a larger dataset. Our experiments showed that
-fine-tuning without an intermediate task training can lead to a better
-performance for most tasks, while more generalized tasks might necessitate a
-preceding intermediate task training step. We hope that this work will act as a
-guide on transfer learning to NLP practitioners.
+<span><p>In natural language understanding (NLU) production systems, users' evolving
+needs necessitate the addition of new features over time, indexed by new
+symbols added to the meaning representation space. This requires additional
+training data and results in ever-growing datasets. We present the first
+systematic investigation of this incremental symbol learning scenario. Our
+analysis reveals a troubling quirk in building broad-coverage NLU systems: as
+the training dataset grows, performance on the new symbol often decreases if we
+do not accordingly increase its training data. This suggests that it becomes
+more difficult to learn new symbols with a larger training dataset. We show
+that this trend holds for multiple mainstream models on two common NLU tasks:
+intent recognition and semantic parsing. Rejecting class imbalance as the sole
+culprit, we reveal that the trend is closely associated with an effect we call
+source signal dilution, where strong lexical cues for the new symbol become
+diluted as the training dataset grows. Selectively dropping training examples
+to prevent dilution often reverses the trend, showing the over-reliance of
+mainstream neural NLU models on simple lexical cues. Code, models, and data are
+available at https://aka.ms/nlu-incremental-symbol-learning
 </p></span>
 </div>
 </a>
@@ -1254,21 +1258,22 @@ guide on transfer learning to NLP practitioners.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Look Ma, Only 400 Samples! Revisiting the Effectiveness of Automatic N-Gram Rule Generation for Spelling Normalization in Filipino. (arXiv:2210.02675v2 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2210.02675">
+<summary class="article-expander__title">Gradient-Based Constrained Sampling from Language Models. (arXiv:2205.12558v2 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2205.12558">
 <div class="article-summary-box-inner">
-<span><p>With 84.75 million Filipinos online, the ability for models to process online
-text is crucial for developing Filipino NLP applications. To this end, spelling
-correction is a crucial preprocessing step for downstream processing. However,
-the lack of data prevents the use of language models for this task. In this
-paper, we propose an N-Gram + Damerau Levenshtein distance model with automatic
-rule extraction. We train the model on 300 samples, and show that despite
-limited training data, it achieves good performance and outperforms other deep
-learning approaches in terms of accuracy and edit distance. Moreover, the model
-(1) requires little compute power, (2) trains in little time, thus allowing for
-retraining, and (3) is easily interpretable, allowing for direct
-troubleshooting, highlighting the success of traditional approaches over more
-complex deep learning models in settings where data is unavailable.
+<span><p>Large pretrained language models generate fluent text but are notoriously
+hard to controllably sample from. In this work, we study constrained sampling
+from such language models: generating text that satisfies user-defined
+constraints, while maintaining fluency and the model's performance in a
+downstream task. We propose MuCoLa -- a sampling procedure that combines the
+log-likelihood of the language model with arbitrary (differentiable)
+constraints in a single energy function, and then generates samples in a
+non-autoregressive manner. Specifically, it initializes the entire output
+sequence with noise and follows a Markov chain defined by Langevin Dynamics
+using the gradients of the energy function. We evaluate MuCoLa on text
+generation with soft and hard constraints as well as their combinations
+obtaining significant improvements over competitive baselines for toxicity
+avoidance, sentiment control, and keyword-guided generation.
 </p></span>
 </div>
 </a>
@@ -1276,25 +1281,25 @@ complex deep learning models in settings where data is unavailable.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">HumSet: Dataset of Multilingual Information Extraction and Classification for Humanitarian Crisis Response. (arXiv:2210.04573v3 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2210.04573">
+<summary class="article-expander__title">RobustLR: Evaluating Robustness to Logical Perturbation in Deductive Reasoning. (arXiv:2205.12598v2 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2205.12598">
 <div class="article-summary-box-inner">
-<span><p>Timely and effective response to humanitarian crises requires quick and
-accurate analysis of large amounts of text data - a process that can highly
-benefit from expert-assisted NLP systems trained on validated and annotated
-data in the humanitarian response domain. To enable creation of such NLP
-systems, we introduce and release HumSet, a novel and rich multilingual dataset
-of humanitarian response documents annotated by experts in the humanitarian
-response community. The dataset provides documents in three languages (English,
-French, Spanish) and covers a variety of humanitarian crises from 2018 to 2021
-across the globe. For each document, HUMSET provides selected snippets
-(entries) as well as assigned classes to each entry annotated using common
-humanitarian information analysis frameworks. HUMSET also provides novel and
-challenging entry extraction and multi-label entry classification tasks. In
-this paper, we take a first step towards approaching these tasks and conduct a
-set of experiments on Pre-trained Language Models (PLM) to establish strong
-baselines for future research in this domain. The dataset is available at
-https://blog.thedeep.io/humset/.
+<span><p>Transformers have been shown to be able to perform deductive reasoning on a
+logical rulebase containing rules and statements written in English natural
+language. While the progress is promising, it is currently unclear if these
+models indeed perform logical reasoning by understanding the underlying logical
+semantics in the language. To this end, we propose RobustLR, a suite of
+evaluation datasets that evaluate the robustness of these models to minimal
+logical edits in rulebases and some standard logical equivalence conditions. In
+our experiments with RoBERTa and T5, we find that the models trained in prior
+works do not perform consistently on the different perturbations in RobustLR,
+thus showing that the models are not robust to the proposed logical
+perturbations. Further, we find that the models find it especially hard to
+learn logical negation and disjunction operators. Overall, using our evaluation
+sets, we demonstrate some shortcomings of the deductive reasoning-based
+language models, which can eventually help towards designing better models for
+logical reasoning over natural language. All the datasets and code base have
+been made publicly available.
 </p></span>
 </div>
 </a>
@@ -1302,24 +1307,25 @@ https://blog.thedeep.io/humset/.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Speaker- and Age-Invariant Training for Child Acoustic Modeling Using Adversarial Multi-Task Learning. (arXiv:2210.10231v2 [cs.SD] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2210.10231">
+<summary class="article-expander__title">Improving Large-scale Paraphrase Acquisition and Generation. (arXiv:2210.03235v3 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2210.03235">
 <div class="article-summary-box-inner">
-<span><p>One of the major challenges in acoustic modelling of child speech is the
-rapid changes that occur in the children's articulators as they grow up, their
-differing growth rates and the subsequent high variability in the same age
-group. These high acoustic variations along with the scarcity of child speech
-corpora have impeded the development of a reliable speech recognition system
-for children. In this paper, a speaker- and age-invariant training approach
-based on adversarial multi-task learning is proposed. The system consists of
-one generator shared network that learns to generate speaker- and age-invariant
-features connected to three discrimination networks, for phoneme, age, and
-speaker. The generator network is trained to minimize the
-phoneme-discrimination loss and maximize the speaker- and age-discrimination
-losses in an adversarial multi-task learning fashion. The generator network is
-a Time Delay Neural Network (TDNN) architecture while the three discriminators
-are feed-forward networks. The system was applied to the OGI speech corpora and
-achieved a 13% reduction in the WER of the ASR.
+<span><p>This paper addresses the quality issues in existing Twitter-based paraphrase
+datasets, and discusses the necessity of using two separate definitions of
+paraphrase for identification and generation tasks. We present a new
+Multi-Topic Paraphrase in Twitter (MultiPIT) corpus that consists of a total of
+130k sentence pairs with crowdsoursing (MultiPIT_crowd) and expert
+(MultiPIT_expert) annotations using two different paraphrase definitions for
+paraphrase identification, in addition to a multi-reference test set
+(MultiPIT_NMR) and a large automatically constructed training set
+(MultiPIT_Auto) for paraphrase generation. With improved data annotation
+quality and task-specific paraphrase definition, the best pre-trained language
+model fine-tuned on our dataset achieves the state-of-the-art performance of
+84.2 F1 for automatic paraphrase identification. Furthermore, our empirical
+results also demonstrate that the paraphrase generation models trained on
+MultiPIT_Auto generate more diverse and high-quality paraphrases compared to
+their counterparts fine-tuned on other corpora such as Quora, MSCOCO, and
+ParaNMT.
 </p></span>
 </div>
 </a>
@@ -1327,25 +1333,21 @@ achieved a 13% reduction in the WER of the ASR.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Group is better than individual: Exploiting Label Topologies and Label Relations for Joint Multiple Intent Detection and Slot Filling. (arXiv:2210.10369v2 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2210.10369">
+<summary class="article-expander__title">RAPS: A Novel Few-Shot Relation Extraction Pipeline with Query-Information Guided Attention and Adaptive Prototype Fusion. (arXiv:2210.08242v2 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2210.08242">
 <div class="article-summary-box-inner">
-<span><p>Recent joint multiple intent detection and slot filling models employ label
-embeddings to achieve the semantics-label interactions. However, they treat all
-labels and label embeddings as uncorrelated individuals, ignoring the
-dependencies among them. Besides, they conduct the decoding for the two tasks
-independently, without leveraging the correlations between them. Therefore, in
-this paper, we first construct a Heterogeneous Label Graph (HLG) containing two
-kinds of topologies: (1) statistical dependencies based on labels'
-co-occurrence patterns and hierarchies in slot labels; (2) rich relations among
-the label nodes. Then we propose a novel model termed ReLa-Net. It can capture
-beneficial correlations among the labels from HLG. The label correlations are
-leveraged to enhance semantic-label interactions. Moreover, we also propose the
-label-aware inter-dependent decoding mechanism to further exploit the label
-correlations for decoding. Experiment results show that our ReLa-Net
-significantly outperforms previous models. Remarkably, ReLa-Net surpasses the
-previous best model by over 20\% in terms of overall accuracy on MixATIS
-dataset.
+<span><p>Few-shot relation extraction (FSRE) aims at recognizing unseen relations by
+learning with merely a handful of annotated instances. To generalize to new
+relations more effectively, this paper proposes a novel pipeline for the FSRE
+task based on queRy-information guided Attention and adaptive Prototype fuSion,
+namely RAPS. Specifically, RAPS first derives the relation prototype by the
+query-information guided attention module, which exploits rich interactive
+information between the support instances and the query instances, in order to
+obtain more accurate initial prototype representations. Then RAPS elaborately
+combines the derived initial prototype with the relation information by the
+adaptive prototype fusion mechanism to get the integrated prototype for both
+train and prediction. Experiments on the benchmark dataset FewRel 1.0 show a
+significant improvement of our method against state-of-the-art methods.
 </p></span>
 </div>
 </a>
@@ -1353,25 +1355,27 @@ dataset.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Co-guiding Net: Achieving Mutual Guidances between Multiple Intent Detection and Slot Filling via Heterogeneous Semantics-Label Graphs. (arXiv:2210.10375v2 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2210.10375">
+<summary class="article-expander__title">What Language Model to Train if You Have One Million GPU Hours?. (arXiv:2210.15424v2 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2210.15424">
 <div class="article-summary-box-inner">
-<span><p>Recent graph-based models for joint multiple intent detection and slot
-filling have obtained promising results through modeling the guidance from the
-prediction of intents to the decoding of slot filling. However, existing
-methods (1) only model the \textit{unidirectional guidance} from intent to
-slot; (2) adopt \textit{homogeneous graphs} to model the interactions between
-the slot semantics nodes and intent label nodes, which limit the performance.
-In this paper, we propose a novel model termed Co-guiding Net, which implements
-a two-stage framework achieving the \textit{mutual guidances} between the two
-tasks. In the first stage, the initial estimated labels of both tasks are
-produced, and then they are leveraged in the second stage to model the mutual
-guidances. Specifically, we propose two \textit{heterogeneous graph attention
-networks} working on the proposed two \textit{heterogeneous semantics-label
-graphs}, which effectively represent the relations among the semantics nodes
-and label nodes. Experiment results show that our model outperforms existing
-models by a large margin, obtaining a relative improvement of 19.3\% over the
-previous best model on MixATIS dataset in overall accuracy.
+<span><p>The crystallization of modeling methods around the Transformer architecture
+has been a boon for practitioners. Simple, well-motivated architectural
+variations can transfer across tasks and scale, increasing the impact of
+modeling research. However, with the emergence of state-of-the-art 100B+
+parameters models, large language models are increasingly expensive to
+accurately design and train. Notably, it can be difficult to evaluate how
+modeling decisions may impact emergent capabilities, given that these
+capabilities arise mainly from sheer scale alone. In the process of building
+BLOOM--the Big Science Large Open-science Open-access Multilingual language
+model--our goal is to identify an architecture and training setup that makes
+the best use of our 1,000,000 A100-GPU-hours budget. Specifically, we perform
+an ablation study at the billion-parameter scale comparing different modeling
+practices and their impact on zero-shot generalization. In addition, we study
+the impact of various popular pre-training corpora on zero-shot generalization.
+We also study the performance of a multilingual model and how it compares to
+the English-only one. Finally, we consider the scaling behaviour of
+Transformers to choose the target model size, shape, and training setup. All
+our models and code are open-sourced at https://huggingface.co/bigscience .
 </p></span>
 </div>
 </a>
@@ -1379,24 +1383,25 @@ previous best model on MixATIS dataset in overall accuracy.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Improving abstractive summarization with energy-based re-ranking. (arXiv:2210.15553v2 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2210.15553">
+<summary class="article-expander__title">Emergent Linguistic Structures in Neural Networks are Fragile. (arXiv:2210.17406v3 [cs.LG] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2210.17406">
 <div class="article-summary-box-inner">
-<span><p>Current abstractive summarization systems present important weaknesses which
-prevent their deployment in real-world applications, such as the omission of
-relevant information and the generation of factual inconsistencies (also known
-as hallucinations). At the same time, automatic evaluation metrics such as CTC
-scores have been recently proposed that exhibit a higher correlation with human
-judgments than traditional lexical-overlap metrics such as ROUGE. In this work,
-we intend to close the loop by leveraging the recent advances in summarization
-metrics to create quality-aware abstractive summarizers. Namely, we propose an
-energy-based model that learns to re-rank summaries according to one or a
-combination of these metrics. We experiment using several metrics to train our
-energy-based re-ranker and show that it consistently improves the scores
-achieved by the predicted summaries. Nonetheless, human evaluation results show
-that the re-ranking approach should be used with care for highly abstractive
-summaries, as the available metrics are not yet sufficiently reliable for this
-purpose.
+<span><p>Large language models (LLMs) have been reported to have strong performance on
+natural language processing tasks. However, performance metrics such as
+accuracy do not measure the quality of the model in terms of its ability to
+robustly represent complex linguistic structure. In this work, we propose a
+framework to evaluate the robustness of linguistic representations using
+probing tasks. We leverage recent advances in extracting emergent linguistic
+constructs from LLMs and apply syntax-preserving perturbations to test the
+stability of these constructs in order to better understand the representations
+learned by LLMs. Empirically, we study the performance of four LLMs across six
+different corpora on the proposed robustness measures. We provide evidence that
+context-free representation (e.g., GloVe) are in some cases competitive with
+context-dependent representations from modern LLMs (e.g., BERT), yet equally
+brittle to syntax-preserving manipulations. Emergent syntactic representations
+in neural networks are brittle, thus our work poses the attention on the risk
+of comparing such structures to those that are object of a long lasting debate
+in linguistics.
 </p></span>
 </div>
 </a>
@@ -1404,18 +1409,31 @@ purpose.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">SDCL: Self-Distillation Contrastive Learning for Chinese Spell Checking. (arXiv:2210.17168v4 [cs.CL] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2210.17168">
+<summary class="article-expander__title">Chronic pain patient narratives allow for the estimation of current pain intensity. (arXiv:2210.17473v2 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2210.17473">
 <div class="article-summary-box-inner">
-<span><p>Due to the ambiguity of homophones, Chinese Spell Checking (CSC) has
-widespread applications. Existing systems typically utilize BERT for text
-encoding. However, CSC requires the model to account for both phonetic and
-graphemic information. To adapt BERT to the CSC task, we propose a token-level
-self-distillation contrastive learning method. We employ BERT to encode both
-the corrupted and corresponding correct sentence. Then, we use contrastive
-learning loss to regularize corrupted tokens' hidden states to be closer to
-counterparts in the correct sentence. On three CSC datasets, we confirmed our
-method provides a significant improvement above baselines.
+<span><p>Chronic pain is a multi-dimensional experience, and pain intensity plays an
+important part, impacting the patients emotional balance, psychology, and
+behaviour. Standard self-reporting tools, such as the Visual Analogue Scale for
+pain, fail to capture this burden. Moreover, this type of tools is susceptible
+to a degree of subjectivity, dependent on the patients clear understanding of
+how to use it, social biases, and their ability to translate a complex
+experience to a scale. To overcome these and other self-reporting challenges,
+pain intensity estimation has been previously studied based on facial
+expressions, electroencephalograms, brain imaging, and autonomic features.
+However, to the best of our knowledge, it has never been attempted to base this
+estimation on the patient narratives of the personal experience of chronic
+pain, which is what we propose in this work. Indeed, in the clinical assessment
+and management of chronic pain, verbal communication is essential to convey
+information to physicians that would otherwise not be easily accessible through
+standard reporting tools, since language, sociocultural, and psychosocial
+variables are intertwined. We show that language features from patient
+narratives indeed convey information relevant for pain intensity estimation,
+and that our computational models can take advantage of that. Specifically, our
+results show that patients with mild pain focus more on the use of verbs,
+whilst moderate and severe pain patients focus on adverbs, and nouns and
+adjectives, respectively, and that these differences allow for the distinction
+between these three pain classes.
 </p></span>
 </div>
 </a>
@@ -1423,43 +1441,22 @@ method provides a significant improvement above baselines.
 </article>
 <article>
 <details class="article-expander">
-<summary class="article-expander__title">Video Event Extraction via Tracking Visual States of Arguments. (arXiv:2211.01781v2 [cs.CV] UPDATED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.01781">
+<summary class="article-expander__title">Eliciting Knowledge from Large Pre-Trained Models for Unsupervised Knowledge-Grounded Conversation. (arXiv:2211.01587v2 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.01587">
 <div class="article-summary-box-inner">
-<span><p>Video event extraction aims to detect salient events from a video and
-identify the arguments for each event as well as their semantic roles. Existing
-methods focus on capturing the overall visual scene of each frame, ignoring
-fine-grained argument-level information. Inspired by the definition of events
-as changes of states, we propose a novel framework to detect video events by
-tracking the changes in the visual states of all involved arguments, which are
-expected to provide the most informative evidence for the extraction of video
-events. In order to capture the visual state changes of arguments, we decompose
-them into changes in pixels within objects, displacements of objects, and
-interactions among multiple arguments. We further propose Object State
-Embedding, Object Motion-aware Embedding and Argument Interaction Embedding to
-encode and track these changes respectively. Experiments on various video event
-extraction tasks demonstrate significant improvements compared to
-state-of-the-art models. In particular, on verb classification, we achieve
-3.49% absolute gains (19.53% relative gains) in F1@5 on Video Situation
-Recognition.
-</p></span>
-</div>
-</a>
-</details>
-</article>
-<article>
-<details class="article-expander">
-<summary class="article-expander__title">The Path to Autonomous Learners. (arXiv:2211.02403v1 [stat.ML] CROSS LISTED)</summary>
-<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.02403">
-<div class="article-summary-box-inner">
-<span><p>In this paper, we present a new theoretical approach for enabling domain
-knowledge acquisition by intelligent systems. We introduce a hybrid model that
-starts with minimal input knowledge in the form of an upper ontology of
-concepts, stores and reasons over this knowledge through a knowledge graph
-database and learns new information through a Logic Neural Network. We study
-the behavior of this architecture when handling new data and show that the
-final system is capable of enriching its current knowledge as well as extending
-it to new domains.
+<span><p>Recent advances in large-scale pre-training provide large models with the
+potential to learn knowledge from the raw text. It is thus natural to ask
+whether it is possible to leverage these large models as knowledge bases for
+downstream tasks. In this work, we answer the aforementioned question in
+unsupervised knowledge-grounded conversation. We explore various methods that
+best elicit knowledge from large models. Our human study indicates that, though
+hallucinations exist, large models post the unique advantage of being able to
+output common sense and summarize facts that cannot be directly retrieved from
+the search engine. To better exploit such generated knowledge in dialogue
+generation, we treat the generated knowledge as a noisy knowledge source and
+propose the posterior-based reweighing as well as the noisy training strategy.
+Empirical results on two benchmarks show advantages over the state-of-the-art
+methods.
 </p></span>
 </div>
 </a>
@@ -1471,7 +1468,7 @@ it to new domains.
 </ul>
 </section>
 <footer>
-<time id="build-timestamp" datetime="2022-11-08 23:17:07.165875454 UTC">2022-11-08 23:17:07 UTC</time>
+<time id="build-timestamp" datetime="2022-11-09 23:17:27.408606196 UTC">2022-11-09 23:17:27 UTC</time>
 <span><a class="footer-link" href="https://github.com/NotCraft/NotFeed"> notfeed 0.2.9</a></span>
 </footer>
 <script src="index.js"></script>
