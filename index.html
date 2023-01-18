@@ -12,20 +12,730 @@
 <body>
 <section class="daily-content">
 <h2 class="daily-heading">
-<time datetime="2023-01-17T01:30:00Z">01-17</time>
+<time datetime="2023-01-18T01:30:00Z">01-18</time>
 </h2>
 <ul class="sources card">
 <li class="source">
 <section>
 <h3 class="source-name">cs.CL updates on arXiv.org</h3>
 <section class="articles-per-source">
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">Infusing Commonsense World Models with Graph Knowledge. (arXiv:2301.05746v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2301.05746">
+<div class="article-summary-box-inner">
+<span><p>While language models have become more capable of producing compelling
+language, we find there are still gaps in maintaining consistency, especially
+when describing events in a dynamically changing world. We study the setting of
+generating narratives in an open world text adventure game, where a graph
+representation of the underlying game state can be used to train models that
+consume and output both grounded graph representations and natural language
+descriptions and actions. We build a large set of tasks by combining
+crowdsourced and simulated gameplays with a novel dataset of complex actions in
+order to to construct such models. We find it is possible to improve the
+consistency of action narration models by training on graph contexts and
+targets, even if graphs are not present at test time. This is shown both in
+automatic metrics and human evaluations. We plan to release our code, the new
+set of tasks, and best performing models.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">Leveraging Large Language Models to Power Chatbots for Collecting User Self-Reported Data. (arXiv:2301.05843v1 [cs.HC])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2301.05843">
+<div class="article-summary-box-inner">
+<span><p>Large language models (LLMs) provide a new way to build chatbots by accepting
+natural language prompts. Yet, it is unclear how to design prompts to power
+chatbots to carry on naturalistic conversations while pursuing a given goal,
+such as collecting self-report data from users. We explore what design factors
+of prompts can help steer chatbots to talk naturally and collect data reliably.
+To this aim, we formulated four prompt designs with different structures and
+personas. Through an online study (N = 48) where participants conversed with
+chatbots driven by different designs of prompts, we assessed how prompt designs
+and conversation topics affected the conversation flows and users' perceptions
+of chatbots. Our chatbots covered 79% of the desired information slots during
+conversations, and the designs of prompts and topics significantly influenced
+the conversation flows and the data collection performance. We discuss the
+opportunities and challenges of building chatbots with LLMs.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">Detecting Stance of Authorities towards Rumors in Arabic Tweets: A Preliminary Study. (arXiv:2301.05863v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2301.05863">
+<div class="article-summary-box-inner">
+<span><p>A myriad of studies addressed the problem of rumor verification in Twitter by
+either utilizing evidence from the propagation networks or external evidence
+from the Web. However, none of these studies exploited evidence from trusted
+authorities. In this paper, we define the task of detecting the stance of
+authorities towards rumors in tweets, i.e., whether a tweet from an authority
+agrees, disagrees, or is unrelated to the rumor. We believe the task is useful
+to augment the sources of evidence utilized by existing rumor verification
+systems. We construct and release the first Authority STance towards Rumors
+(AuSTR) dataset, where evidence is retrieved from authority timelines in Arabic
+Twitter. Due to the relatively limited size of our dataset, we study the
+usefulness of existing datasets for stance detection in our task. We show that
+existing datasets are somewhat useful for the task; however, they are clearly
+insufficient, which motivates the need to augment them with annotated data
+constituting stance of authorities from Twitter.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">TikTalk: A Multi-Modal Dialogue Dataset for Real-World Chitchat. (arXiv:2301.05880v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2301.05880">
+<div class="article-summary-box-inner">
+<span><p>We present a novel multi-modal chitchat dialogue dataset-TikTalk aimed at
+facilitating the research of intelligent chatbots. It consists of the videos
+and corresponding dialogues users generate on video social applications. In
+contrast to existing multi-modal dialogue datasets, we construct dialogue
+corpora based on video comment-reply pairs, which is more similar to chitchat
+in real-world dialogue scenarios. Our dialogue context includes three
+modalities: text, vision, and audio. Compared with previous image-based
+dialogue datasets, the richer sources of context in TikTalk lead to a greater
+diversity of conversations. TikTalk contains over 38K videos and 367K
+dialogues. Data analysis shows that responses in TikTalk are in correlation
+with various contexts and external knowledge. It poses a great challenge for
+the deep understanding of multi-modal information and the generation of
+responses. We evaluate several baselines on three types of automatic metrics
+and conduct case studies. Experimental results demonstrate that there is still
+a large room for future improvement on TikTalk. Our dataset is available at
+\url{https://github.com/RUC-AIMind/TikTalk}.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">$\texttt{tasksource}$: Structured Dataset Preprocessing Annotations for Frictionless Extreme Multi-Task Learning and Evaluation. (arXiv:2301.05948v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2301.05948">
+<div class="article-summary-box-inner">
+<span><p>The HuggingFace Datasets Hub hosts thousands of datasets. This provides
+exciting opportunities for language model training and evaluation. However, the
+datasets for a given type of task are stored with different schemas, and
+harmonization is harder than it seems (https://xkcd.com/927/). Multi-task
+training or evaluation requires manual work to fit data into task templates.
+Various initiatives independently address this problem by releasing the
+harmonized datasets or harmonization codes to preprocess datasets to the same
+format. We identify patterns across previous preprocessings, e.g. mapping of
+column names, and extraction of a specific sub-field from structured data in a
+column, and propose a structured annotation framework that makes our
+annotations fully exposed and not buried in unstructured code. We release a
+dataset annotation framework and dataset annotations for more than 400 English
+tasks (https://github.com/sileod/tasksource). These annotations provide
+metadata, like the name of the columns that should be used as input or labels
+for all datasets, and can save time for future dataset preprocessings, even if
+they do not use our framework. We fine-tune a multi-task text encoder on all
+tasksource tasks, outperforming every publicly available text encoder of
+comparable size on an external evaluation
+https://hf.co/sileod/deberta-v3-base-tasksource-nli.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">Rationalizing Predictions by Adversarial Information Calibration. (arXiv:2301.06009v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2301.06009">
+<div class="article-summary-box-inner">
+<span><p>Explaining the predictions of AI models is paramount in safety-critical
+applications, such as in legal or medical domains. One form of explanation for
+a prediction is an extractive rationale, i.e., a subset of features of an
+instance that lead the model to give its prediction on that instance. For
+example, the subphrase ``he stole the mobile phone'' can be an extractive
+rationale for the prediction of ``Theft''. Previous works on generating
+extractive rationales usually employ a two-phase model: a selector that selects
+the most important features (i.e., the rationale) followed by a predictor that
+makes the prediction based exclusively on the selected features. One
+disadvantage of these works is that the main signal for learning to select
+features comes from the comparison of the answers given by the predictor to the
+ground-truth answers. In this work, we propose to squeeze more information from
+the predictor via an information calibration method. More precisely, we train
+two models jointly: one is a typical neural model that solves the task at hand
+in an accurate but black-box manner, and the other is a selector-predictor
+model that additionally produces a rationale for its prediction. The first
+model is used as a guide for the second model. We use an adversarial technique
+to calibrate the information extracted by the two models such that the
+difference between them is an indicator of the missed or over-selected
+features. In addition, for natural language tasks, we propose a
+language-model-based regularizer to encourage the extraction of fluent
+rationales. Experimental results on a sentiment analysis task, a hate speech
+recognition task as well as on three tasks from the legal domain show the
+effectiveness of our approach to rationale extraction.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">A data science and machine learning approach to continuous analysis of Shakespeare's plays. (arXiv:2301.06024v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2301.06024">
+<div class="article-summary-box-inner">
+<span><p>The availability of quantitative methods that can analyze text has provided
+new ways of examining literature in a manner that was not available in the
+pre-information era. Here we apply comprehensive machine learning analysis to
+the work of William Shakespeare. The analysis shows clear change in style of
+writing over time, with the most significant changes in the sentence length,
+frequency of adjectives and adverbs, and the sentiments expressed in the text.
+Applying machine learning to make a stylometric prediction of the year of the
+play shows a Pearson correlation of 0.71 between the actual and predicted year,
+indicating that Shakespeare's writing style as reflected by the quantitative
+measurements changed over time. Additionally, it shows that the stylometrics of
+some of the plays is more similar to plays written either before or after the
+year they were written. For instance, Romeo and Juliet is dated 1596, but is
+more similar in stylometrics to plays written by Shakespeare after 1600. The
+source code for the analysis is available for free download.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">Hawk: An Industrial-strength Multi-label Document Classifier. (arXiv:2301.06057v1 [cs.CL])</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2301.06057">
+<div class="article-summary-box-inner">
+<span><p>There are a plethora of methods and algorithms that solve the classical
+multi-label document classification. However, when it comes to deployment and
+usage in an industry setting, most, if not all the contemporary approaches fail
+to address some of the vital aspects or requirements of an ideal solution: i.
+ability to operate on variable-length texts and rambling documents. ii.
+catastrophic forgetting problem. iii. modularity when it comes to online
+learning and updating the model. iv. ability to spotlight relevant text while
+producing the prediction, i.e. visualizing the predictions. v. ability to
+operate on imbalanced or skewed datasets. vi. scalability. The paper describes
+the significance of these problems in detail and proposes a unique neural
+network architecture that addresses the above problems. The proposed
+architecture views documents as a sequence of sentences and leverages
+sentence-level embeddings for input representation. A hydranet-like
+architecture is designed to have granular control over and improve the
+modularity, coupled with a weighted loss driving task-specific heads. In
+particular, two specific mechanisms are compared: Bi-LSTM and
+Transformer-based. The architecture is benchmarked on some of the popular
+benchmarking datasets such as Web of Science - 5763, Web of Science - 11967,
+BBC Sports, and BBC News datasets. The experimental results reveal that the
+proposed model outperforms the existing methods by a substantial margin. The
+ablation study includes comparisons of the impact of the attention mechanism
+and the application of weighted loss functions to train the task-specific heads
+in the hydranet.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">A Survey on the Evolution of Stream Processing Systems. (arXiv:2008.00842v2 [cs.DC] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2008.00842">
+<div class="article-summary-box-inner">
+<span><p>Stream processing has been an active research field for more than 20 years,
+but it is now witnessing its prime time due to recent successful efforts by the
+research community and numerous worldwide open-source communities. This survey
+provides a comprehensive overview of fundamental aspects of stream processing
+systems and their evolution in the functional areas of out-of-order data
+management, state management, fault tolerance, high availability, load
+management, elasticity, and reconfiguration. We review noteworthy past research
+findings, outline the similarities and differences between early ('00-'10) and
+modern ('11-'22) streaming systems, and discuss recent trends and open
+problems.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">Studying Fake News Spreading, Polarisation Dynamics, and Manipulation by Bots: a Tale of Networks and Language. (arXiv:2109.07909v2 [cs.CY] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2109.07909">
+<div class="article-summary-box-inner">
+<span><p>With the explosive growth of online social media, the ancient problem of
+information disorders interfering with news diffusion has surfaced with a
+renewed intensity threatening our democracies, public health, and news outlets'
+credibility. Therefore, thousands of scientific papers have been published in a
+relatively short period, making researchers of different disciplines struggle
+with an information overload problem. The aim of this survey is threefold: (1)
+we present the results of a network-based analysis of the existing
+multidisciplinary literature to support the search for relevant trends and
+central publications; (2) we describe the main results and necessary background
+to attack the problem under a computational perspective; (3) we review selected
+contributions using network science as a unifying framework and computational
+linguistics as the tool to make sense of the shared content. Despite scholars
+working on computational linguistics and networks traditionally belong to
+different scientific communities, we expect that those interested in the area
+of fake news should be aware of crucial aspects of both disciplines.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">Sparse Progressive Distillation: Resolving Overfitting under Pretrain-and-Finetune Paradigm. (arXiv:2110.08190v4 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2110.08190">
+<div class="article-summary-box-inner">
+<span><p>Conventional wisdom in pruning Transformer-based language models is that
+pruning reduces the model expressiveness and thus is more likely to underfit
+rather than overfit. However, under the trending pretrain-and-finetune
+paradigm, we postulate a counter-traditional hypothesis, that is: pruning
+increases the risk of overfitting when performed at the fine-tuning phase. In
+this paper, we aim to address the overfitting problem and improve pruning
+performance via progressive knowledge distillation with error-bound properties.
+We show for the first time that reducing the risk of overfitting can help the
+effectiveness of pruning under the pretrain-and-finetune paradigm. Ablation
+studies and experiments on the GLUE benchmark show that our method outperforms
+the leading competitors across different tasks.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">Detecting Dementia from Speech and Transcripts using Transformers. (arXiv:2110.14769v3 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2110.14769">
+<div class="article-summary-box-inner">
+<span><p>Alzheimer's disease (AD) constitutes a neurodegenerative disease with serious
+consequences to peoples' everyday lives, if it is not diagnosed early since
+there is no available cure. Alzheimer's is the most common cause of dementia,
+which constitutes a general term for loss of memory. Due to the fact that
+dementia affects speech, existing research initiatives focus on detecting
+dementia from spontaneous speech. However, little work has been done regarding
+the conversion of speech data to Log-Mel spectrograms and Mel-frequency
+cepstral coefficients (MFCCs) and the usage of pretrained models. Concurrently,
+little work has been done in terms of both the usage of transformer networks
+and the way the two modalities, i.e., speech and transcripts, are combined in a
+single neural network. To address these limitations, first we represent speech
+signal as an image and employ several pretrained models, with Vision
+Transformer (ViT) achieving the highest evaluation results. Secondly, we
+propose multimodal models. More specifically, our introduced models include
+Gated Multimodal Unit in order to control the influence of each modality
+towards the final classification and crossmodal attention so as to capture in
+an effective way the relationships between the two modalities. Extensive
+experiments conducted on the ADReSS Challenge dataset demonstrate the
+effectiveness of the proposed models and their superiority over
+state-of-the-art approaches.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">Learning Disentangled Semantic Representations for Zero-Shot Cross-Lingual Transfer in Multilingual Machine Reading Comprehension. (arXiv:2204.00996v2 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2204.00996">
+<div class="article-summary-box-inner">
+<span><p>Multilingual pre-trained models are able to zero-shot transfer knowledge from
+rich-resource to low-resource languages in machine reading comprehension (MRC).
+However, inherent linguistic discrepancies in different languages could make
+answer spans predicted by zero-shot transfer violate syntactic constraints of
+the target language. In this paper, we propose a novel multilingual MRC
+framework equipped with a Siamese Semantic Disentanglement Model (SSDM) to
+disassociate semantics from syntax in representations learned by multilingual
+pre-trained models. To explicitly transfer only semantic knowledge to the
+target language, we propose two groups of losses tailored for semantic and
+syntactic encoding and disentanglement. Experimental results on three
+multilingual MRC datasets (i.e., XQuAD, MLQA, and TyDi QA) demonstrate the
+effectiveness of our proposed approach over models based on mBERT and XLM-100.
+Code is available at:https://github.com/wulinjuan/SSDM_MRC.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">Detecting Vocal Fatigue with Neural Embeddings. (arXiv:2204.03428v2 [eess.AS] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2204.03428">
+<div class="article-summary-box-inner">
+<span><p>Vocal fatigue refers to the feeling of tiredness and weakness of voice due to
+extended utilization. This paper investigates the effectiveness of neural
+embeddings for the detection of vocal fatigue. We compare x-vectors,
+ECAPA-TDNN, and wav2vec 2.0 embeddings on a corpus of academic spoken English.
+Low-dimensional mappings of the data reveal that neural embeddings capture
+information about the change in vocal characteristics of a speaker during
+prolonged voice usage. We show that vocal fatigue can be reliably predicted
+using all three kinds of neural embeddings after only 50 minutes of continuous
+speaking when temporal smoothing and normalization are applied to the extracted
+embeddings. We employ support vector machines for classification and achieve
+accuracy scores of 81% using x-vectors, 85% using ECAPA-TDNN embeddings, and
+82% using wav2vec 2.0 embeddings as input features. We obtain an accuracy score
+of 76%, when the trained system is applied to a different speaker and recording
+environment without any adaptation.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">Emergent Communication through Metropolis-Hastings Naming Game with Deep Generative Models. (arXiv:2205.12392v2 [cs.AI] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2205.12392">
+<div class="article-summary-box-inner">
+<span><p>Constructive studies on symbol emergence systems seek to investigate
+computational models that can better explain human language evolution, the
+creation of symbol systems, and the construction of internal representations.
+This study provides a new model for emergent communication, which is based on a
+probabilistic generative model (PGM) instead of a discriminative model based on
+deep reinforcement learning. We define the Metropolis-Hastings (MH) naming game
+by generalizing previously proposed models. It is not a referential game with
+explicit feedback, as assumed by many emergent communication studies. Instead,
+it is a game based on joint attention without explicit feedback.
+Mathematically, the MH naming game is proved to be a type of MH algorithm for
+an integrative PGM that combines two agents that play the naming game. From
+this viewpoint, symbol emergence is regarded as decentralized Bayesian
+inference, and semiotic communication is regarded as inter-personal cross-modal
+inference. This notion leads to the collective predictive coding hypothesis}
+regarding language evolution and, in general, the emergence of symbols. We also
+propose the inter-Gaussian mixture model (GMM)+ variational autoencoder (VAE),
+a deep generative model for emergent communication based on the MH naming game.
+The model has been validated on MNIST and Fruits 360 datasets. Experimental
+findings demonstrate that categories are formed from real images observed by
+agents, and signs are correctly shared across agents by successfully utilizing
+both of the observations of agents via the MH naming game. Furthermore,
+scholars verified that visual images were recalled from signs uttered by
+agents. Notably, emergent communication without supervision and reward feedback
+improved the performance of the unsupervised representation learning of agents.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">Neural Generation Meets Real People: Building a Social, Informative Open-Domain Dialogue Agent. (arXiv:2207.12021v2 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2207.12021">
+<div class="article-summary-box-inner">
+<span><p>We present Chirpy Cardinal, an open-domain social chatbot. Aiming to be both
+informative and conversational, our bot chats with users in an authentic,
+emotionally intelligent way. By integrating controlled neural generation with
+scaffolded, hand-written dialogue, we let both the user and bot take turns
+driving the conversation, producing an engaging and socially fluent experience.
+Deployed in the fourth iteration of the Alexa Prize Socialbot Grand Challenge,
+Chirpy Cardinal handled thousands of conversations per day, placing second out
+of nine bots with an average user rating of 3.58/5.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">What Can Transformers Learn In-Context? A Case Study of Simple Function Classes. (arXiv:2208.01066v2 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2208.01066">
+<div class="article-summary-box-inner">
+<span><p>In-context learning refers to the ability of a model to condition on a prompt
+sequence consisting of in-context examples (input-output pairs corresponding to
+some task) along with a new query input, and generate the corresponding output.
+Crucially, in-context learning happens only at inference time without any
+parameter updates to the model. While large language models such as GPT-3
+exhibit some ability to perform in-context learning, it is unclear what the
+relationship is between tasks on which this succeeds and what is present in the
+training data. To make progress towards understanding in-context learning, we
+consider the well-defined problem of training a model to in-context learn a
+function class (e.g., linear functions): that is, given data derived from some
+functions in the class, can we train a model to in-context learn "most"
+functions from this class? We show empirically that standard Transformers can
+be trained from scratch to perform in-context learning of linear functions --
+that is, the trained model is able to learn unseen linear functions from
+in-context examples with performance comparable to the optimal least squares
+estimator. In fact, in-context learning is possible even under two forms of
+distribution shift: (i) between the training data of the model and
+inference-time prompts, and (ii) between the in-context examples and the query
+input during inference. We also show that we can train Transformers to
+in-context learn more complex function classes -- namely sparse linear
+functions, two-layer neural networks, and decision trees -- with performance
+that matches or exceeds task-specific learning algorithms. Our code and models
+are available at https://github.com/dtsip/in-context-learning .
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">Iterative pseudo-forced alignment by acoustic CTC loss for self-supervised ASR domain adaptation. (arXiv:2210.15226v2 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2210.15226">
+<div class="article-summary-box-inner">
+<span><p>High-quality data labeling from specific domains is costly and human
+time-consuming. In this work, we propose a self-supervised domain adaptation
+method, based upon an iterative pseudo-forced alignment algorithm. The produced
+alignments are employed to customize an end-to-end Automatic Speech Recognition
+(ASR) and iteratively refined. The algorithm is fed with frame-wise character
+posteriors produced by a seed ASR, trained with out-of-domain data, and
+optimized throughout a Connectionist Temporal Classification (CTC) loss. The
+alignments are computed iteratively upon a corpus of broadcast TV. The process
+is repeated by reducing the quantity of text to be aligned or expanding the
+alignment window until finding the best possible audio-text alignment. The
+starting timestamps, or temporal anchors, are produced uniquely based on the
+confidence score of the last aligned utterance. This score is computed with the
+paths of the CTC-alignment matrix. With this methodology, no human-revised text
+references are required. Alignments from long audio files with low-quality
+transcriptions, like TV captions, are filtered out by confidence score and
+ready for further ASR adaptation. The obtained results, on both the Spanish
+RTVE2022 and CommonVoice databases, underpin the feasibility of using CTC-based
+systems to perform: highly accurate audio-text alignments, domain adaptation
+and semi-supervised training of end-to-end ASR.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">A Categorical Framework for Modeling with Stock and Flow Diagrams. (arXiv:2211.01290v3 [cs.LO] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.01290">
+<div class="article-summary-box-inner">
+<span><p>Stock and flow diagrams are already an important tool in epidemiology, but
+category theory lets us go further and treat these diagrams as mathematical
+entities in their own right. In this chapter we use communicable disease models
+created with our software, StockFlow.jl, to explain the benefits of the
+categorical approach. We first explain the category of stock-flow diagrams and
+note the clear separation between the syntax of these diagrams and their
+semantics, demonstrating three examples of semantics already implemented in the
+software: ODEs, causal loop diagrams, and system structure diagrams. We then
+turn to two methods for building large stock-flow diagrams from smaller ones in
+a modular fashion: composition and stratification. Finally, we introduce the
+open-source ModelCollab software for diagram-based collaborative modeling. The
+graphical user interface of this web-based software lets modelers take
+advantage of the ideas discussed here without any knowledge of their
+categorical foundations.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">Extending Logic Explained Networks to Text Classification. (arXiv:2211.09732v2 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.09732">
+<div class="article-summary-box-inner">
+<span><p>Recently, Logic Explained Networks (LENs) have been proposed as
+explainable-by-design neural models providing logic explanations for their
+predictions. However, these models have only been applied to vision and tabular
+data, and they mostly favour the generation of global explanations, while local
+ones tend to be noisy and verbose. For these reasons, we propose LENp,
+improving local explanations by perturbing input words, and we test it on text
+classification. Our results show that (i) LENp provides better local
+explanations than LIME in terms of sensitivity and faithfulness, and (ii) logic
+explanations are more useful and user-friendly than feature scoring provided by
+LIME as attested by a human survey.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">Programming by Example and Text-to-Code Translation for Conversational Code Generation. (arXiv:2211.11554v2 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2211.11554">
+<div class="article-summary-box-inner">
+<span><p>Dialogue systems is an increasingly popular task of natural language
+processing. However, the dialogue paths tend to be deterministic, restricted to
+the system rails, regardless of the given request or input text. Recent
+advances in program synthesis have led to systems which can synthesize programs
+from very general search spaces, e.g. Programming by Example, and to systems
+with very accessible interfaces for writing programs, e.g. text-to-code
+translation, but have not achieved both of these qualities in the same system.
+We propose Modular Programs for Text-guided Hierarchical Synthesis (MPaTHS), a
+method for integrating Programming by Example and text-to-code systems which
+offers an accessible natural language interface for synthesizing general
+programs. We present a program representation that allows our method to be
+applied to the problem of task-oriented dialogue. Finally, we demo MPaTHS using
+our program representation.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">MEAformer: Multi-modal Entity Alignment Transformer for Meta Modality Hybrid. (arXiv:2212.14454v2 [cs.AI] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2212.14454">
+<div class="article-summary-box-inner">
+<span><p>As an important variant of entity alignment (EA), multi-modal entity
+alignment (MMEA) aims to discover identical entities across different knowledge
+graphs (KGs) with relevant images attached. We noticed that current MMEA
+algorithms all globally adopt the KG-level modality fusion strategies for
+multi-modal entity representation but ignore the variation in modality
+preferences for individual entities, hurting the robustness to potential noise
+involved in modalities (e.g., blurry images and relations). In this paper we
+present MEAformer, a multi-modal entity alignment transformer approach for meta
+modality hybrid, which dynamically predicts the mutual correlation coefficients
+among modalities for entity-level feature aggregation. A modal-aware hard
+entity replay strategy is further proposed for addressing vague entity details.
+Experimental results show that our model not only achieves SOTA performance on
+multiple training scenarios including supervised, unsupervised, iterative, and
+low resource, but also has comparable number of parameters, optimistic speed,
+and good interpretability. Our code and data will be available soon for
+evaluation.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">The Design Principle of Blockchain: An Initiative for the SoK of SoKs. (arXiv:2301.00479v2 [cs.CR] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2301.00479">
+<div class="article-summary-box-inner">
+<span><p>Blockchain, also coined as decentralized AI, has the potential to empower AI
+to be more trustworthy by creating a decentralized trust of privacy, security,
+and audibility. However, systematic studies on the design principle of
+blockchain as a trust engine for an integrated society of
+cyber-physical-social-system (CPSS) are still absent. In this article, we
+provide an initiative for seeking the design principle of blockchain for a
+better digital world. Using a hybrid method of qualitative and quantitative
+studies, we examine the past origin, the current development, and the future
+directions of blockchain design principles. We have three findings. First, the
+answer to whether blockchain lives up to its original design principle as a
+distributed database is controversial. Second, the current development of the
+blockchain community reveals a taxonomy of 7 categories, namely, privacy and
+security, scalability, decentralization, applicability, governance and
+regulation, system design, and cross-chain interoperability. Both research and
+practice are more centered around the first category of privacy and security
+and the fourth category of applicability. Future scholars, practitioners, and
+policy-makers have vast opportunities in other, much less exploited facets and
+the synthesis at the interface of multiple aspects. Finally, in
+counter-examples, we conclude that a synthetic solution that crosses discipline
+boundaries is necessary to close the gaps between the current design of
+blockchain and the design principle of a trust engine for a truly intelligent
+world.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">Large Language Models as Corporate Lobbyists. (arXiv:2301.01181v6 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2301.01181">
+<div class="article-summary-box-inner">
+<span><p>We demonstrate a proof-of-concept of a large language model conducting
+corporate lobbying related activities. An autoregressive large language model
+(OpenAI's text-davinci-003) determines if proposed U.S. Congressional bills are
+relevant to specific public companies and provides explanations and confidence
+levels. For the bills the model deems as relevant, the model drafts a letter to
+the sponsor of the bill in an attempt to persuade the congressperson to make
+changes to the proposed legislation. We use hundreds of novel ground-truth
+labels of the relevance of a bill to a company to benchmark the performance of
+the model, which outperforms the baseline of predicting the most common outcome
+of irrelevance. We also benchmark the performance of the previous OpenAI GPT-3
+model (text-davinci-002), which was the state-of-the-art model on many academic
+natural language tasks until text-davinci-003 was recently released. The
+performance of text-davinci-002 is worse than a simple benchmark. These results
+suggest that, as large language models continue to exhibit improved natural
+language understanding capabilities, performance on lobbying related tasks will
+continue to improve. Longer-term, if AI begins to influence law in a manner
+that is not a direct extension of human intentions, this threatens the critical
+role that law as information could play in aligning AI with humans. Initially,
+AI is being used to simply augment human lobbyists for a small portion of their
+daily tasks. However, firms have an incentive to use less and less human
+oversight over automated assessments of policy ideas and the written
+communication to regulatory agencies and Congressional staffers. The core
+question raised is where to draw the line between human-driven and AI-driven
+policy influence.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">Causal Categorization of Mental Health Posts using Transformers. (arXiv:2301.02589v2 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2301.02589">
+<div class="article-summary-box-inner">
+<span><p>With recent developments in digitization of clinical psychology, NLP research
+community has revolutionized the field of mental health detection on social
+media. Existing research in mental health analysis revolves around the
+cross-sectional studies to classify users' intent on social media. For in-depth
+analysis, we investigate existing classifiers to solve the problem of causal
+categorization which suggests the inefficiency of learning based methods due to
+limited training samples. To handle this challenge, we use transformer models
+and demonstrate the efficacy of a pre-trained transfer learning on "CAMS"
+dataset. The experimental result improves the accuracy and depicts the
+importance of identifying cause-and-effect relationships in the underlying
+text.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">Why do Nearest Neighbor Language Models Work?. (arXiv:2301.02828v2 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2301.02828">
+<div class="article-summary-box-inner">
+<span><p>Language models (LMs) compute the probability of a text by sequentially
+computing a representation of an already-seen context and using this
+representation to predict the next word. Currently, most LMs calculate these
+representations through a neural network consuming the immediate previous
+context. However recently, retrieval-augmented LMs have shown to improve over
+standard neural LMs, by accessing information retrieved from a large datastore,
+in addition to their standard, parametric, next-word prediction. In this paper,
+we set out to understand why retrieval-augmented language models, and
+specifically why k-nearest neighbor language models (kNN-LMs) perform better
+than standard parametric LMs, even when the k-nearest neighbor component
+retrieves examples from the same training set that the LM was originally
+trained on. To this end, we perform a careful analysis of the various
+dimensions over which kNN-LM diverges from standard LMs, and investigate these
+dimensions one by one. Empirically, we identify three main reasons why kNN-LM
+performs better than standard LMs: using a different input representation for
+predicting the next tokens, approximate kNN search, and the importance of
+softmax temperature for the kNN distribution. Further, we incorporate these
+insights into the model architecture or the training procedure of the standard
+parametric LM, improving its results without the need for an explicit retrieval
+component. The code is available at https://github.com/frankxu2004/knnlm-why.
+</p></span>
+</div>
+</a>
+</details>
+</article>
+<article>
+<details class="article-expander">
+<summary class="article-expander__title">Word-Graph2vec: An efficient word embedding approach on word co-occurrence graph using random walk sampling. (arXiv:2301.04312v2 [cs.CL] UPDATED)</summary>
+<a class="article-summary-link article-summary-box-outer" href="http://arxiv.org/abs/2301.04312">
+<div class="article-summary-box-inner">
+<span><p>Word embedding has become ubiquitous and is widely used in various text
+mining and natural language processing (NLP) tasks, such as information
+retrieval, semantic analysis, and machine translation, among many others.
+Unfortunately, it is prohibitively expensive to train the word embedding in a
+relatively large corpus. We propose a graph-based word embedding algorithm,
+called Word-Graph2vec, which converts the large corpus into a word
+co-occurrence graph, then takes the word sequence samples from this graph by
+randomly traveling and trains the word embedding on this sampling corpus in the
+end. We posit that because of the stable vocabulary, relative idioms, and fixed
+expressions in English, the size and density of the word co-occurrence graph
+change slightly with the increase in the training corpus. So that
+Word-Graph2vec has stable runtime on the large scale data set, and its
+performance advantage becomes more and more obvious with the growth of the
+training corpus. Extensive experiments conducted on real-world datasets show
+that the proposed algorithm outperforms traditional Skip-Gram by four-five
+times in terms of efficiency, while the error generated by the random walk
+sampling is small.
+</p></span>
+</div>
+</a>
+</details>
+</article>
 </section>
 </section>
 </li>
 </ul>
 </section>
 <footer>
-<time id="build-timestamp" datetime="2023-01-17 23:12:41.799530951 UTC">2023-01-17 23:12:41 UTC</time>
+<time id="build-timestamp" datetime="2023-01-18 23:12:45.109570395 UTC">2023-01-18 23:12:45 UTC</time>
 <span><a class="footer-link" href="https://github.com/NotCraft/NotFeed"> notfeed 0.2.9</a></span>
 </footer>
 <script src="index.js"></script>
